@@ -11,29 +11,32 @@
         </head>
         <body>
                 <header>
-                        <img src="maquetteohmyfood/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" />              
+                        <div class="logo">
+                                <img src="maquetteohmyfood/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" />         
+                        </div>             
                 </header>
-        
-                <!--navbarr-->
-                <div>
-                        <i class="fas fa-map-marker-alt">
-                        <input type="text" name="cityDistric" id="cityDistrict" placeholder="Paris, Belleville" />
-                         </i>                      
-                        <h1>Réservez le menu qui vous convient</h1>
-                        <p>Découvrez des restaurants d'exceptions,<br />
-                        sélectionnés par nos soins.</p>
-                </div>
-                <div id="btnRestaurant">
-                        <a href=" #">Explorer nos restaurants</a>
-                </div>        
-                <h2>Fonctionnement</h2>
-                <div>
-                        <ol>
-                                <li><i class="fa fa-mobile-alt"></i>Choisissez un restaurant</li>
-                                <li><i class="fa fa-list-ul"></i>Composez votre menu</li>
-                                <li><i class="fa fa-store"></i>Dégustez au restaurant</li>
-                        </ol>
-                </div>        
+                <nav>
+                        <div id="city">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="cityname">Paris, Belleville</span> 
+                        </div> 
+                        <div class="choice">                    
+                                <h2>Réservez le menu qui vous convient</h2>
+                                <p>Découvrez des restaurants d'exceptions,<br />
+                                sélectionnés par nos soins.</p>
+                                <div id="btnRestaurant">
+                                        <a href=" #">Explorer nos restaurants</a>
+                                </div>
+                        </div>        
+                        <h2>Fonctionnement</h2>
+                        <div>
+                                <ol>
+                                        <li class="btnmobile"><i class="fa fa-mobile-alt"></i>Choisissez un restaurant</li>
+                                        <li class="btnlist"><i class="fa fa-list-ul"></i>Composez votre menu</li>
+                                        <li class="btnstore"><i class="fa fa-store"></i>Dégustez au restaurant</li>
+                                </ol>
+                        </div>
+                </nav>        
                 <main>
                         <h2>Restaurants</h2>
                         <figure class="palettegout">
