@@ -1,4 +1,10 @@
-style.css
+@font-face
+{
+    font-family: 'Roboto';
+    src:local('fonts/roboto/Roboto-Regular.ttf');
+    font-family: 'Shrikhand';
+    src:local('fonts/shrikhand/Shrikhand-Regular.otf')
+}
 
 body{
     cursor: pointer;
