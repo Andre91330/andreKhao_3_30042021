@@ -24,64 +24,76 @@
                                 <h2>Réservez le menu qui vous convient</h2>
                                 <p>Découvrez des restaurants d'exceptions,<br />
                                 sélectionnés par nos soins.</p>
-                                <div id="btnRestaurant">
-                                        <a href=" #">Explorer nos restaurants</a>
-                                </div>
-                        </div>        
-                        <h2>Fonctionnement</h2>
-                        <div>
-                                <ol>
-                                        <li class="btnmobile"><i class="fa fa-mobile-alt"></i>Choisissez un restaurant</li>
-                                        <li class="btnlist"><i class="fa fa-list-ul"></i>Composez votre menu</li>
-                                        <li class="btnstore"><i class="fa fa-store"></i>Dégustez au restaurant</li>
-                                </ol>
+                                <a class="btn" href="#restaurants">Explorer nos restaurants</a>       
+                        </div>       
+                        <h3>Fonctionnement</h3>
+                        <div class="link">                                       
+                                <span class="linknumber">1</span>
+                                <span class="linkbtn"><i class="fa fa-mobile-alt"></i>
+                                        <a href="#">Choisissez un restaurant</a></span>
+                        </div>
+                        <div class="link">       
+                                <span class="linknumber">2</span>                                       
+                                <span class="linkbtn"><i class="fa fa-list-ul"></i>
+                                        <a href="#">Composez votre menu</a></span>
+                        </div>
+                        <div class="link">
+                                <span class="linknumber">3</span>        
+                                <span class="linkbtn"><i class="fa fa-store"></i>
+                                        <a href="#">Dégustez au restaurant</a></span>
                         </div>
                 </nav>        
                 <main>
-                        <h2>Restaurants</h2>
-                        <figure id="palettegout">
+                        <div id="restaurants">
+                        <h3>Restaurants</h3>
+                        </div>
+                        <figure class="restaurant">
                                 <a href="#laPaletteduGout.hmtl">
                                 <span class="new">Nouveau</span>
                                 <img src="maquetteohmyfood/restaurants/palette_petit.jpg" alt="Restaurant La Palette du goût"></a>
-                                <figcaption><h3>La palette du goût</h3>
+                                <figcaption><h4>La palette du goût</h4>
                                         <p>Ménilmontant</p>
                                         <i class="far fa-heart"></i>
                                 </figcaption>       
                         </figure>
-                        <figure id="noteenchantee">
+                        <figure class="restaurant">
                                 <a href="#laNoteEnchantee.html">
                                 <span class="new">Nouveau</span>
                                 <img src="maquetteohmyfood/restaurants/note_petit.jpg" alt="Restaurant La note enchantée"></a>
-                                <figcaption><h3>La note enchantée</h3>
+                                <figcaption><h4>La note enchantée</h4>
                                         <p>Charonne</p>
                                         <i class="far fa-heart"></i>
                                 </figcaption>       
                         </figure>
-                        <figure id="lafrançaise">
+                        <figure class="restaurant">
                                 <a href="#alaFrançaise.html">
                                 <img src="maquetteohmyfood/restaurants/Francaise_petit.jpg" alt="Restaurant A la française"></a>
-                                <figcaption><h3>A la française</h3>
+                                <figcaption><h4>A la française</h4>
                                         <p>Cité Rouge</p>
                                         <i class="far fa-heart"></i>
                                 </figcaption>
                         </figure>
-                        <figure id="delicesens">
+                        <figure class="restaurant">
                                 <a href="#leDelicedesSens.html">
                                 <img src="maquetteohmyfood/restaurants/delice_petit.jpg" alt="Le délice des sens"></a>
-                                <figcaption><h3>Le délice des sens</h3>
+                                <figcaption><h4>Le délice des sens</h4>
                                         <p>Folie-Méricourt</p>
                                         <i class="far fa-heart"></i>
                                 </figcaption>
                         </figure>
                 </main>
                 <footer>
-                        <img src="maquetteohmyfood/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" /> 
-                        <ul>
-                                <li><i class="fa fa-utensils"></i>Proposer un restaurant</li>
-                                <li><i class="fa fa-hands-helping"></i>Devenir partenaire</li>
-                                <li>Mentions légales</li>
-                                <li>Contact</li>
-                        </ul>
+                        <div class="footer__log">
+                                <img src="maquetteohmyfood/logo/ohmyfood@2x.svg" alt="logo Ohmyfood" /> 
+                        </div>
+                        <div>
+                                <ul>
+                                        <li><i class="fa fa-utensils"></i><span class="text">Proposer un restaurant</span></li>
+                                        <li><i class="fa fa-hands-helping"></i><span class="text">Devenir partenaire</span></li>       
+                                        <li>Mentions légales</li>
+                                        <li>Contact</li>
+                                </ul>
+                        </div>
                 </footer>
         </body>
 </html>
