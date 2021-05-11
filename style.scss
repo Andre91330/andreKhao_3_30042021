@@ -181,13 +181,18 @@ figcaption i{
 
 /* footer */
 
-footer {
+footer{
     margin-top: 2rem;
     padding: 1.5rem 0;
     width: 17.5rem;
     background-color: black;
     color: white;
     font-size: 80%;  
+}
+
+.foot{
+    color:#FFF;
+    width: 5rem;
 }
 
 ul {
@@ -204,8 +209,9 @@ li i{
     cursor: pointer;
 }
 
-li{
+.footext a{
     text-decoration: none;
+    color:#FFF
 }
 
 #laPaletteduGout{
