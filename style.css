@@ -8,7 +8,7 @@ body {
   font-family: "roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
   line-height: 1rem;
-  width: 20rem;
+  width: 17.5rem;
 }
 
 html {
@@ -85,16 +85,17 @@ h3, h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  vertical-align: middle;
+  position: relative;
 }
 
 .linknumber {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 2.5rem;
-  margin-top: 1.5rem;
-  width: 1.5rem;
-  height: 1.5rem;
+  position: absolute;
+  float: left;
+  margin-top: 2rem;
+  margin-left: 1.3rem;
+  width: 1.2rem;
+  height: 1.2rem;
   color: white;
   border: 0.1rem solid;
   background-color: violet;
@@ -106,15 +107,15 @@ h3, h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1rem;
+  padding-left: 1.3rem;
 }
 
 .linkbtn {
   background-color: #afabab;
   vertical-align: middle;
-  width: 16rem;
-  padding: 0.8rem;
-  margin: 0.6rem 0 0.6rem -0.7rem;
+  width: 14.7rem;
+  padding: 0.8rem 0;
+  margin: 1rem 0 0.6rem 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -140,7 +141,26 @@ h3, h4 {
   background-color: violet;
 }
 
+main {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.restaurant {
+  width: 17.4rem;
+  height: 15rem;
+  margin: auto;
+}
+
+.restaurant img {
+  width: 17.4rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 footer {
+  width: 17.5rem;
   background-color: black;
   color: white;
 }
