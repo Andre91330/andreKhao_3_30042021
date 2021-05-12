@@ -143,7 +143,7 @@ h3 {
 }
 
 /* main */
-.restaurant {
+.restcard {
   margin: auto;
   width: 16.5rem;
   height: 12rem;
@@ -154,7 +154,7 @@ h3 {
           box-shadow: 0.2rem 0.2rem 0.5rem grey;
 }
 
-.restaurant img {
+.restcard img {
   width: 16.5rem;
   height: 9rem;
   -o-object-fit: cover;
@@ -162,7 +162,7 @@ h3 {
   border-radius: 1rem 1rem 0 0;
 }
 
-figcaption {
+.restbrand {
   height: 2.5rem;
   border-radius: 0 0 1rem 1rem;
   text-align: left;
@@ -181,7 +181,7 @@ figcaption {
   padding: 0.5rem;
 }
 
-figcaption i {
+.restbrand i {
   position: absolute;
   right: 0.5rem;
   margin-top: -1rem;
