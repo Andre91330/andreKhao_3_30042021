@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Roboto";
-  src: local("fonts/roboto/Roboto-Regular.ttf");
+  src: local("fonts/roboto/RobotoCondensed-Regular.ttf");
   font-family: "Shrikhand";
   src: local("fonts/shrikhand/Shrikhand-Regular.otf");
 }
 body {
-  font-family: "roboto", Verdana, Tahoma, sans-serif;
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
   line-height: 1rem;
   width: 17.5rem;
@@ -17,6 +17,7 @@ html {
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 /* header */
@@ -36,7 +37,7 @@ header {
   width: 100%;
   height: 2rem;
   padding-top: 1rem;
-  background-color: grey;
+  background-color: #dadada;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -45,7 +46,7 @@ header {
 .choice {
   width: auto;
   height: 13rem;
-  background-color: #ff3;
+  background-color: #f3f3f3;
   text-align: center;
 }
 
@@ -57,15 +58,16 @@ h2 {
 h3 {
   padding-top: 2rem;
   padding-left: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .choice p {
   padding: 1rem 0 1.5rem 0;
 }
 
-.btn {
+.choicestore {
   text-decoration: none;
-  background-color: #9356DC;
+  background-color: #FF79DA;
   color: #FFF;
   vertical-align: middle;
   width: 70%;
@@ -74,12 +76,11 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   border: none;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   margin: auto;
   cursor: pointer;
 }
-
-.btn:hover {
+.choicestore:hover {
   opacity: 0.5;
 }
 
@@ -93,18 +94,19 @@ h3 {
 
 .linknumber {
   position: absolute;
-  margin-top: 2rem;
-  margin-left: 1.2rem;
-  width: 1.2rem;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  padding-left: 0.33rem;
+  width: 0.9rem;
   height: 1.2rem;
   color: white;
-  border: 0.1rem solid;
-  background-color: violet;
-  border-radius: 50%;
+  font-size: 0.8rem;
+  background-color: #9356DC;
+  border-radius: 50rem;
 }
 
 .link i {
-  width: 2rem;
+  width: 1.8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -112,25 +114,28 @@ h3 {
 }
 
 .linkbtn {
-  background-color: #afabab;
   vertical-align: middle;
   width: 14.7rem;
   padding: 0.8rem 0;
-  margin: 1rem 0 0.6rem 2rem;
+  margin: 0.5rem 0 0.5rem 1.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 2rem;
+  line-height: 1.5rem;
   border: none;
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   color: #000;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.8rem grey;
-          box-shadow: 0.2rem 0.2rem 0.8rem grey;
+  background-color: white;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem #e6e6e6;
+          box-shadow: 0.2rem 0.2rem 1rem #e6e6e6;
+}
+.linkbtn:hover {
+  background-color: #FF79DA;
 }
 
 .linkbtn a {
@@ -138,20 +143,15 @@ h3 {
   text-decoration: none;
 }
 
-.linkbtn:hover {
-  background-color: violet;
-}
-
 /* main */
 .restcard {
-  margin: auto;
+  margin: 0.5rem;
   width: 16.5rem;
   height: 12rem;
   border-radius: 1rem;
-  margin-top: 0.5rem;
   position: relative;
-  -webkit-box-shadow: 0.2rem 0.2rem 0.5rem grey;
-          box-shadow: 0.2rem 0.2rem 0.5rem grey;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem #e6e6e6;
+          box-shadow: 0.2rem 0.2rem 1rem #e6e6e6;
 }
 
 .restcard img {
@@ -160,38 +160,80 @@ h3 {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem 1rem 0 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.restcard img:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .restbrand {
-  height: 2.5rem;
+  height: 3rem;
   border-radius: 0 0 1rem 1rem;
   text-align: left;
+  padding-top: 0.3rem;
   padding-left: 0.5rem;
   font-size: 80%;
   position: relative;
   cursor: pointer;
-  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .new {
   position: absolute;
+  font-weight: bold;
+  font-size: 0.7rem;
   right: 0.5rem;
-  margin-top: 0.5rem;
-  background: green;
+  margin: 0.5rem;
   padding: 0.5rem;
+  color: #278870;
+  background: #99E2D0;
+}
+
+.restbrand a {
+  text-decoration: none;
+  color: black;
 }
 
 .restbrand i {
+  font-size: 1.3rem;
   position: absolute;
-  right: 0.5rem;
-  margin-top: -1rem;
+  right: 1rem;
+  margin-top: -1.6rem;
   cursor: pointer;
+}
+
+.full {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.full:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.empty {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.empty:hover {
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 /* footer */
 footer {
   margin-top: 2rem;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   width: 17.5rem;
   background-color: black;
   color: white;
@@ -225,29 +267,4 @@ li i {
 .footext a {
   text-decoration: none;
   color: #FFF;
-}
-
-#laPaletteduGout {
-  position: relative;
-}
-
-.home__heading {
-  width: 100%;
-  height: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: auto;
-}
-
-.fa-arrow-left {
-  position: absolute;
-  left: 1rem;
-}
-
-.logo {
-  margin: auto;
 }/*# sourceMappingURL=style.css.map */

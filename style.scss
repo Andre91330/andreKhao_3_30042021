@@ -1,13 +1,13 @@
 @font-face
 {
     font-family: 'Roboto';
-    src:local('fonts/roboto/Roboto-Regular.ttf');
+    src:local('fonts/roboto/RobotoCondensed-Regular.ttf');
     font-family: 'Shrikhand';
     src:local('fonts/shrikhand/Shrikhand-Regular.otf');
 }
 
 body{
-    font-family: 'roboto', Verdana, Tahoma, sans-serif;
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
     font-size: 0.9rem;
     line-height: 1rem;
     width: 17.5rem;
@@ -19,7 +19,13 @@ html{
 
 *{
     margin:0;
+    padding: 0;
 }
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$grey: #C0C0C0; 
 
 /* header */
 
@@ -40,7 +46,7 @@ header{
     width: 100%;
     height: 2rem;
     padding-top: 1rem;
-    background-color: grey;
+    background-color: lighten($grey, 10%);
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -49,7 +55,7 @@ header{
 .choice{
     width: auto;
     height: 13rem;
-    background-color: #ff3;
+    background-color: lighten($grey, 20%);
     text-align: center;
 }
 
@@ -61,27 +67,28 @@ h2{
 h3{
     padding-top: 2rem;
     padding-left: 1rem;
+    padding-bottom:.5rem;
 }
 .choice p{
     padding: 1rem 0 1.5rem 0;
 }
 
-.btn{
+
+.choicestore{
     text-decoration: none;
-    background-color: #9356DC;
-    color:#FFF;
+    background-color: $secondary;
+    color: #FFF;
     vertical-align: middle;
     width: 70%;
     padding: 0.6rem;
     align-items: center;
     border: none;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     margin: auto;
     cursor: pointer;
-}
-
-.btn:hover{
-    opacity: .5;
+    &:hover{
+        opacity: .5;
+    }
 }
 
 .link{
@@ -92,37 +99,45 @@ h3{
 
 .linknumber{
     position: absolute;
-    margin-top: 2rem;
-    margin-left: 1.2rem;
-    width: 1.2rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    padding-left: .33rem;
+    width: .9rem;
     height: 1.2rem;
     color: white;
-    border: 0.1rem solid;
-    background-color: violet;
-    border-radius: 50%;
+    font-size: .8rem;
+    background-color: $primary;
+    border-radius: 50rem;
 }
 
 .link i{
-    width: 2rem;
+    width: 1.8rem;
     align-items: center;
     padding-left: 1.3rem;
 }
 
+@mixin heading-shadow{
+    box-shadow:.2rem .2rem 1rem lighten(grey, 40%)
+}
+
 .linkbtn{
-    background-color: rgb(175, 171, 171);
     vertical-align: middle;
     width: 14.7rem;
     padding: .8rem 0;
-    margin: 1rem 0 .6rem 2rem;
+    margin: .5rem 0 .5rem 1.5rem;
     align-items: center;
-    line-height: 2rem;
+    line-height: 1.5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: .7rem;
     cursor: pointer;
     display: flex;
     position: relative;
     color:#000;
-    box-shadow: .2rem .2rem .8rem grey;
+    background-color: lighten($grey, 30%);
+    @include heading-shadow;
+    &:hover{
+        background-color: $secondary;
+    }
 }
 
 .linkbtn a{
@@ -130,20 +145,15 @@ h3{
     text-decoration: none;
 }
 
-.linkbtn:hover{
-    background-color: violet;
-}
-
 /* main */
 
 .restcard{
-    margin: auto;
+    margin: .5rem;
     width: 16.5rem;
     height: 12rem;
-    border-radius: 1rem;
-    margin-top: 0.5rem; 
+    border-radius: 1rem; 
     position: relative;
-    box-shadow: .2rem .2rem .5rem grey; 
+    @include heading-shadow; 
 }
 
 .restcard img{
@@ -151,39 +161,72 @@ h3{
     height: 9rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
-}
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.15);
+    }
+}   
 
 .restbrand{ 
-    height: 2.5rem;
+    height: 3rem;
     border-radius: 0 0 1rem 1rem; 
     text-align: left;
-    padding-left: 0.5rem;
+    padding-top: .3rem;
+    padding-left: .5rem;
     font-size: 80%;
     position: relative;
     cursor: pointer;
-    text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
  
 .new{
     position: absolute;
-    right: 0.5rem;
-    margin-top: 0.5rem;
-    background: green;
-    padding: 0.5rem;
+    font-weight: bold;
+    font-size: .7rem;
+    right: .5rem;
+    margin: .5rem;
+    padding: .5rem;
+    color: darken($tertiary, 40%);
+    background: $tertiary;
+}
+
+.restbrand a{
+    text-decoration: none;
+    color: black;
 }
 
 .restbrand i{
+    font-size: 1.3rem;
     position: absolute;
-    right: 0.5rem;
-    margin-top: -1rem;
+    right: 1rem;
+    margin-top: -1.6rem;
     cursor: pointer;
 }
+
+
+.full{
+    opacity: 0;
+    transform: scale(0);
+    &:hover{
+        transform: scale(1);
+    }
+}
+
+.empty{
+    opacity: 1;
+    transform: scale(1);
+    &:hover{
+        transform: scale(0);
+    }
+}
+
 
 /* footer */
 
 footer{
     margin-top: 2rem;
-    padding: 1.5rem 0;
+    padding: 1.5rem;
     width: 17.5rem;
     background-color: black;
     color: white;
@@ -209,28 +252,8 @@ li i{
     cursor: pointer;
 }
 
-.footext a{
+.footext a{                 /* a voit */
     text-decoration: none;
     color:#FFF
+    font: 'Shrikhand';
 }
-
-#laPaletteduGout{
-    position: relative;
-}
-.home__heading{
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
-} 
-
-.fa-arrow-left{
-    position: absolute;
-    left: 1rem;
-}
-
-.logo{
-    margin: auto;
-}
-
