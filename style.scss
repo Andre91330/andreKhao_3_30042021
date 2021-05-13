@@ -83,7 +83,7 @@ nav{
 }
 
 @mixin linear-gradient {
-    background: linear-gradient( to top right, $secondary, $primary)
+    background: linear-gradient( to top, $primary, $secondary)
 }
 
 .choicestore{
@@ -148,28 +148,37 @@ nav{
     background-color: lighten($grey, 20%);
     @include heading-shadow;
     &:hover{
-        background-color: $secondary;
+         background-color: lighten($primary, 35%);
+        &:hover > i{
+        color:$primary;
+        }
     }
 }
 
 .linkbtn a{
     color: black;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* main */
 
 main{
     background-color: lighten($grey, 20%);
+    padding-bottom: 1rem;
 }
 
 .restcard{
-    margin: .5rem;
+    margin: .5rem .5rem 1rem .5rem;
     width: 16.5rem;
     height: 12rem;
     border-radius: 1rem; 
     position: relative;
     @include heading-shadow; 
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 
 .restcard img{
@@ -177,10 +186,6 @@ main{
     height: 9rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
-    transform: scale(1);
-    &:hover{
-        transform: scale(1.15);
-    }
 }   
 
 .restbrand{ 
@@ -203,7 +208,7 @@ main{
     right: .5rem;
     margin: .5rem;
     padding: .5rem;
-    color: darken($tertiary, 40%);
+    color: green;
     background: $tertiary;
 }
 
@@ -220,38 +225,21 @@ main{
     cursor: pointer;
 }
 
-
-.full{
-    opacity: 0;
-    transform: scale(0);
-    &:hover{
-        transform: scale(1);
-    }
-}
-
-.empty{
-    opacity: 1;
-    transform: scale(1);
-    &:hover{
-        transform: scale(0);
-    }
-}
-
-
 /* footer */
 
 footer{
-    margin-top: 2rem;
     padding: 1.5rem;
     width: 14.5rem;
     background-color: black;
+    opacity: .8;
     color: white;
     font-size: 80%;  
 }
 
-.foot_logo{
+.foot_logo{             /* a refaire */
     color:#FFF;
     width: 5rem;
+    opacity: 1;
 }
 
 ul {

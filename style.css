@@ -82,8 +82,8 @@ nav {
   border-radius: 1.5rem;
   margin: auto;
   cursor: pointer;
-  background: -webkit-gradient(linear, left bottom, right top, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to top right, #FF79DA, #9356DC);
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
 }
 .choicestore:hover {
   opacity: 0.5;
@@ -143,27 +143,38 @@ nav {
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
 }
 .linkbtn:hover {
-  background-color: #FF79DA;
+  background-color: #f2eafb;
+}
+.linkbtn:hover:hover > i {
+  color: #9356DC;
 }
 
 .linkbtn a {
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* main */
 main {
   background-color: #f3f3f3;
+  padding-bottom: 1rem;
 }
 
 .restcard {
-  margin: 0.5rem;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
   width: 16.5rem;
   height: 12rem;
   border-radius: 1rem;
   position: relative;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.restcard:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .restcard img {
@@ -172,12 +183,6 @@ main {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1rem 1rem 0 0;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.restcard img:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
 }
 
 .restbrand {
@@ -205,7 +210,7 @@ main {
   right: 0.5rem;
   margin: 0.5rem;
   padding: 0.5rem;
-  color: #278870;
+  color: green;
   background: #99E2D0;
 }
 
@@ -222,39 +227,21 @@ main {
   cursor: pointer;
 }
 
-.full {
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-.full:hover {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
-.empty {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.empty:hover {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-}
-
 /* footer */
 footer {
-  margin-top: 2rem;
   padding: 1.5rem;
   width: 14.5rem;
   background-color: black;
+  opacity: 0.8;
   color: white;
   font-size: 80%;
 }
 
 .foot_logo {
+  /* a refaire */
   color: #FFF;
   width: 5rem;
+  opacity: 1;
 }
 
 ul {
