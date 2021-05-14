@@ -1,10 +1,6 @@
-@font-face
-{
-    font-family: 'Roboto';
-    src:local('fonts/roboto/RobotoCondensed-Regular.ttf');
-    font-family: 'Shrikhand';
-    src:local('fonts/shrikhand/Shrikhand-Regular.otf');
-}
+@import "./sass/base/_confs.scss";
+@import "./sass/utils/_variables.scss";
+@import "./sass/utils/_mixins.scss";
 
 body{
     font-family: 'Roboto', Verdana, Tahoma, sans-serif;
@@ -20,15 +16,6 @@ html{
 *{
     margin:0;
     padding: 0;
-}
-
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
-$grey: #C0C0C0; 
-
-@mixin heading-shadow{
-    box-shadow:.2rem .2rem 1rem lighten(grey, 30%)
 }
 
 /* header */
@@ -76,14 +63,8 @@ nav{
     font-size: .8rem;
 }
 
-
-
 .choice p{
     padding: 1rem 0 1.5rem 0;
-}
-
-@mixin linear-gradient {
-    background: linear-gradient( to top, $primary, $secondary)
 }
 
 .choicestore{
@@ -104,7 +85,7 @@ nav{
     }
 }
 
-.linker{
+#linker{
     margin-bottom: 1rem;
 }
 
@@ -206,7 +187,7 @@ main{
     font-weight: bold;
     font-size: .7rem;
     right: .5rem;
-    margin: .5rem;
+    margin: 1rem .5rem;
     padding: .5rem;
     color: green;
     background: $tertiary;

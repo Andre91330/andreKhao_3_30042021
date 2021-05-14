@@ -1,0 +1,7 @@
+@mixin heading-shadow{
+    box-shadow:.2rem .2rem 1rem lighten(grey, 30%)
+}
+
+@mixin linear-gradient {
+    background: linear-gradient( to top, $primary, $secondary)
+}

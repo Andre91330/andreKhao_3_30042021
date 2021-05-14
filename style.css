@@ -89,7 +89,7 @@ nav {
   opacity: 0.5;
 }
 
-.linker {
+#linker {
   margin-bottom: 1rem;
 }
 
@@ -208,7 +208,7 @@ main {
   font-weight: bold;
   font-size: 0.7rem;
   right: 0.5rem;
-  margin: 0.5rem;
+  margin: 1rem 0.5rem;
   padding: 0.5rem;
   color: green;
   background: #99E2D0;
