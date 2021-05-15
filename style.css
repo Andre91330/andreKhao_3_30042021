@@ -4,7 +4,6 @@
   font-family: "Shrikhand";
   src: local("fonts/shrikhand/Shrikhand-Regular.otf");
 }
-
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
@@ -24,12 +23,42 @@ html {
 /* header */
 header {
   text-align: center;
+  position: relative;
 }
 
 .logo {
   padding-top: 1rem;
   width: 100%;
   height: 3rem;
+}
+
+footer {
+  padding: 1.5rem;
+  width: 14.5rem;
+  background-color: #000;
+  opacity: 0.8;
+  color: #FFF;
+  font-size: 80%;
+}
+footer ul {
+  list-style: none;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2rem;
+}
+footer li i {
+  width: 1.5rem;
+  cursor: pointer;
+}
+footer li a {
+  text-decoration: none;
+  color: #FFF;
 }
 
 /* navbar */
@@ -109,7 +138,7 @@ nav {
   padding-left: 0.33rem;
   width: 0.9rem;
   height: 1.2rem;
-  color: white;
+  color: #FFF;
   background-color: #9356DC;
   border-radius: 50rem;
 }
@@ -151,7 +180,7 @@ nav {
 }
 
 .linkbtn a {
-  color: black;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
 }
@@ -204,6 +233,11 @@ main {
           flex-direction: column;
 }
 
+.restbrand a {
+  text-decoration: none;
+  color: #000;
+}
+
 .new {
   position: absolute;
   font-weight: bold;
@@ -215,43 +249,10 @@ main {
   background: #99E2D0;
 }
 
-.restbrand i {
+.like {
   font-size: 1.3rem;
   position: absolute;
   right: 1rem;
-  margin-top: -1.6rem;
+  margin-top: 0;
   cursor: pointer;
-}
-
-/* footer */
-footer {
-  padding: 1.5rem;
-  width: 14.5rem;
-  background-color: black;
-  opacity: 0.8;
-  color: white;
-  font-size: 80%;
-}
-
-ul {
-  list-style: none;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  line-height: 1.2rem;
-}
-
-li i {
-  width: 1.5rem;
-  cursor: pointer;
-}
-
-li a {
-  text-decoration: none;
-  color: #FFF;
 }/*# sourceMappingURL=style.css.map */

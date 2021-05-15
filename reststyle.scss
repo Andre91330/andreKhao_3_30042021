@@ -1,2 +1,44 @@
+@import "./sass/utils/mixins";
+@import "./sass/utils/variables";
 @import "./sass/base/confs";
+@import "./sass/layout/footer";
 
+// header
+
+.fa-arrow-left{
+    position: absolute;
+    left: 1rem;
+    margin-top: 1.5rem;
+    cursor: $cursor;
+}
+
+.banner{
+    position:relative;
+}
+    
+.banner img{
+        width: $gfold;
+        height: 14rem;
+}
+
+      /* a revoir */
+.name{
+    width: $gfold;
+    height: 2rem;
+    padding-top: 1.5rem;
+    background-color: darken($white, 5);
+    border-radius: 2rem 2rem 0 0;
+    display: flex;  
+    justify-content: space-around; 
+    position: absolute;
+    bottom: 0;
+    h1{
+        font-family:'Shrikhand';
+        font-size: 1.5rem;
+    }
+    i{
+        font-size: 1.5rem;
+    }
+
+    
+}

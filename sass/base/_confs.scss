@@ -1,8 +1,36 @@
-@font-face
-{
+@font-face{
     font-family: 'Roboto';
     src:local('/fonts/roboto/RobotoCondensed-Regular.ttf');
     font-family: 'Shrikhand';
     src:local('fonts/shrikhand/Shrikhand-Regular.otf');
+}
+
+body{
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    width: $gfold;
+}
+
+html{
+    font-size: 100%;
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* header */
+
+header{
+    text-align: center; 
+    position: relative;
+}
+
+.logo{
+    padding-top: 1rem;
+    width: 100%;
+    height: 3rem;
 }
 
