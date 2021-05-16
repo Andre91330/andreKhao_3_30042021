@@ -2,7 +2,7 @@
     font-family: 'Roboto';
     src:local('/fonts/roboto/RobotoCondensed-Regular.ttf');
     font-family: 'Shrikhand';
-    src:local('fonts/shrikhand/Shrikhand-Regular.otf');
+    src:local('/fonts/shrikhand/Shrikhand-Regular.ttf');
 }
 
 body{
@@ -29,8 +29,8 @@ header{
 }
 
 .logo{
-    padding-top: 1rem;
+    padding-top: .5rem;
     width: 100%;
-    height: 3rem;
+    height: 2.5rem;
 }
 

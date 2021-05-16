@@ -1,15 +1,16 @@
 @import "./sass/utils/mixins";
 @import "./sass/utils/variables";
 @import "./sass/base/confs";
-@import "./sass/layout/footer";
+@import "./sass/layout/header";
 
 // header
 
 .fa-arrow-left{
     position: absolute;
     left: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     cursor: $cursor;
+    color: $black;
 }
 
 .banner{
@@ -38,7 +39,44 @@
     }
     i{
         font-size: 1.5rem;
-    }
+    }   
+}
 
-    
+h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .8rem;
+    padding-left: 1rem;
+    border-bottom: .4rem solid $tertiaire;
+}
+
+.dish{
+    width: 17rem;
+    height: 4rem;
+}
+
+// footer
+
+footer{
+    padding: 1.5rem;
+    width: 14.5rem;
+    background-color: $black;
+    opacity: .8;
+    color: $white;
+    font-size: 80%;  
+    ul {
+        list-style: none;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.2rem;
+    }
+    li i{
+        width: 1.5rem;
+        cursor: $cursor;
+    }
+    li a{                 
+        text-decoration: none;
+        color: $white;
+    }
 }
