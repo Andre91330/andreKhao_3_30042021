@@ -66,10 +66,11 @@ header {
 }
 .name h1 {
   font-family: "Shrikhand";
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 .name i {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
 }
 
 h3 {

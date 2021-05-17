@@ -282,4 +282,11 @@ footer li i {
 footer li a {
   text-decoration: none;
   color: #FFF;
+}
+
+.foot__logo {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+  color: #FFF;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
