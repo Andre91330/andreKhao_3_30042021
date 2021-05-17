@@ -4,6 +4,20 @@
 @import "./sass/layout/header";
 @import "./sass/pages/home";
 
+.logo__head{
+    font-family:'Shrikhand';
+    font-size: 1rem;
+    color: $black;
+}
+
+@mixin hoover($colour: $colour){
+    @if ( ligthness($colour) < 25%){
+        $colour: ligthen($colour, 10%);
+    }else{
+        $colour: darken($colour, 10%);
+    }
+} 
+
 h2{
     padding: 2rem 1.5rem 0 1.5rem;
     font-size: 1rem;
@@ -36,6 +50,7 @@ nav{
     @include linear-gradient;
     &:hover{
         opacity: .5;
+        @include hoover($grey);
     }
 }
 
@@ -86,6 +101,7 @@ nav{
          background-color: lighten($primary, 35%);
         &:hover > i{
         color:$primary;
+        @include hoover($grey);
         }
     }
 }
@@ -160,8 +176,8 @@ main{
     cursor: $cursor;
 }
 
-.full{
-
+.like__full{
+        display: none;
 }
 
 footer{
@@ -171,6 +187,11 @@ footer{
     opacity: .8;
     color: $white;
     font-size: 80%;  
+    .logo__foot{
+        font-family:'Shrikhand';
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+    }
     ul {
         list-style: none;
         text-align: left;
@@ -188,9 +209,3 @@ footer{
     }
 }
 
-.foot__logo{
-    font-family:'Shrikhand';
-    font-size: 1rem; 
-    color: $white;
-    text-decoration: none;
-}
