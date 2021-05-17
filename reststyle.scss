@@ -13,17 +13,14 @@
     display: flex;  
     justify-content: space-around; 
     position: absolute;
-}
-
-h1{
-    font-family:'Shrikhand';
-    font-size: .5rem;    
-}
-
-i{
-    font-size: .5rem;
-    vertical-align: text-top;
-
+    h1{
+        font-family:'Shrikhand';
+        font-size: 1rem;    
+    }
+    i{
+        font-size: 1rem;
+        vertical-align: text-top;
+    }
 }   
 
 
@@ -36,10 +33,17 @@ h3{
 }
 
 .dish{
-    width: 17rem;
-    height: 4rem;
+    color: $black;
+    margin: .5rem;
     display: flex;
 }
+
+.dish--waistline{
+    width: 16.rem;
+    height: 3rem;
+}
+
+
 
 // footer
 
