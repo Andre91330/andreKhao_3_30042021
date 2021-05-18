@@ -8,7 +8,13 @@
 @mixin colourpage{ 
     background-color: darken($white, 5%)
 }
-      
+
+.logo__head{
+    font-family:'Shrikhand';
+    font-size: 1.2rem;
+    color: $black;
+} 
+
 .name{
     width: $gfold;
     height: 2rem;
@@ -66,7 +72,12 @@ footer{
     background-color: $black;
     opacity: .8;
     color: $white;
-    font-size: 80%;  
+    font-size: 80%;
+    .logo__foot{
+        font-family:'Shrikhand';
+        font-size: 1.25rem;
+        padding-bottom: 1rem;
+    }
     ul {
         list-style: none;
         text-align: left;

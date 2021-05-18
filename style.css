@@ -26,23 +26,6 @@ header {
   position: relative;
 }
 
-.logo {
-  padding-top: 0.5rem;
-  width: 100%;
-  height: 2.5rem;
-}
-
-header {
-  text-align: center;
-  position: relative;
-}
-
-.logo {
-  padding-top: 0.5rem;
-  width: 100%;
-  height: 2.5rem;
-}
-
 .fa-arrow-left {
   position: absolute;
   left: 1rem;
