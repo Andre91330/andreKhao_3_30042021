@@ -4,25 +4,25 @@
 @import "./sass/layout/header";
 @import "./sass/pages/home";
 
-.logo__head{
-    font-family:'Shrikhand';
-    font-size: 1.2rem;
-    color: $black;
-}
+
 body{
-    font-family: 'Roboto', 'Shrikhand', Verdana, Tahoma, sans-serif;
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
     font-size: 0.9rem;
     line-height: 1rem;
     width: $gfold;
 }
 
-@mixin hoover($colour: $colour){
-    @if ( ligthness($colour) < 25%){
-        $colour: ligthen($colour, 15%);
-    }@else{
-        $colour: darken($colour, 15%);
-    }
-} 
+header{
+    text-align: center; 
+    position: relative;
+    height: 2rem;
+    padding-top: 1rem;
+}
+
+.logohead{ 
+    font-family: 'Shrikhand';
+    font-size: 1.38rem;
+}
 
 h2{
     padding: 2rem 1.5rem 0 1.5rem;
@@ -56,7 +56,6 @@ nav{
     @include linear-gradient;
     &:hover{
         opacity: .5;
-        @include hoover($grey);
     }
 }
 
@@ -105,7 +104,6 @@ nav{
     @include heading-shadow;
     &:hover{
          background-color: lighten($primary, 35%);
-         @include hoover($grey);
          &:hover > i{
         color:$primary;
         }
@@ -186,6 +184,27 @@ main{
         display: none;
 }
 
+.like{
+    &__full{
+    color: $secondary;
+    display: none;
+    }
+    &__empty{
+    color: $black;
+    }
+    &:active{
+        .like{
+            &__empty{
+                display: none;
+            }
+            &__full{
+                display: flex;
+            }
+        }
+    }
+}
+
+
 footer{
     padding: 1.5rem;
     width: 14.5rem;
@@ -193,9 +212,9 @@ footer{
     opacity: .8;
     color: $white;
     font-size: 80%;
-    .logo__foot{
-        font-family:'Shrikhand';
-        font-size: 1.25rem;
+    .logofoot{
+        font-family: 'Shrikhand';
+        font-size: 1rem;
         padding-bottom: 1rem;
     }
     ul {

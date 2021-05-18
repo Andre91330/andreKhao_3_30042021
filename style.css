@@ -26,6 +26,12 @@ header {
   position: relative;
 }
 
+.logo {
+  padding-top: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+}
+
 .fa-arrow-left {
   position: absolute;
   left: 1rem;
@@ -60,6 +66,25 @@ header {
   height: 13rem;
   background-color: #f3f3f3;
   text-align: center;
+}
+
+body {
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 17.5rem;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  height: 2rem;
+  padding-top: 1rem;
+}
+
+.logohead {
+  font-family: "Shrikhand";
+  font-size: 1.38rem;
 }
 
 h2 {
@@ -238,6 +263,26 @@ main {
   cursor: pointer;
 }
 
+.like__full {
+  display: none;
+}
+
+.like__full {
+  color: #FF79DA;
+  display: none;
+}
+.like__empty {
+  color: #000;
+}
+.like:active .like__empty {
+  display: none;
+}
+.like:active .like__full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 footer {
   padding: 1.5rem;
   width: 14.5rem;
@@ -246,10 +291,10 @@ footer {
   color: #FFF;
   font-size: 80%;
 }
-footer .foot__logo {
+footer .logofoot {
   font-family: "Shrikhand";
-  font-size: 1.25rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 footer ul {
   list-style: none;

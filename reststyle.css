@@ -50,10 +50,16 @@ header {
 }
 
 /* a revoir */
+.logo__head {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  color: #000;
+}
+
 .name {
   width: 17.5rem;
   height: 2rem;
-  padding-top: 1.5rem;
+  padding-top: 1.3rem;
   background-color: #f2f2f2;
   border-radius: 2rem 2rem 0 0;
   display: -webkit-box;
@@ -62,11 +68,10 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  bottom: 0;
 }
 .name h1 {
   font-family: "Shrikhand";
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .name i {
   font-size: 1.3rem;
@@ -78,6 +83,28 @@ h3 {
   font-weight: normal;
   font-size: 0.8rem;
   padding-left: 1rem;
+  border-bottom: 0.4rem solid #99E2D0;
+}
+
+.dish {
+  color: #000;
+  margin: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0.1rem solid #000;
+}
+
+.dish--waistline {
+  width: 16rem;
+  height: 3rem;
+}
+
+main {
+  background-color: #f2f2f2;
 }
 
 footer {
@@ -87,6 +114,11 @@ footer {
   opacity: 0.8;
   color: #FFF;
   font-size: 80%;
+}
+footer .logofoot {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }
 footer ul {
   list-style: none;
