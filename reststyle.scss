@@ -1,19 +1,32 @@
-@import "./sass/utils/mixins";
 @import "./sass/utils/variables";
+@import "./sass/utils/mixins";
 @import "./sass/base/confs";
-@import "./sass/layout/header";
-
-      /* a revoir */
-
-@mixin colourpage{ 
-    background-color: darken($white, 5%)
+@import "./sass/pages/store";
+@font-face{
+    font-family: 'Roboto';
+    src:local('/fonts/roboto/RobotoCondensed-Regular.ttf');
+    font-family: 'Shrikhand';
+    src:local('/fonts/shrikhand/Shrikhand-Regular.ttf');
 }
 
-.logo__head{
-    font-family:'Shrikhand';
-    font-size: 1.2rem;
-    color: $black;
-} 
+
+
+@mixin home{
+    .home{
+        text-align: center; 
+        position: relative;
+        height: 2rem;
+        padding-top: 1rem;
+    }
+    .logohead{ 
+        font-family: 'Shrikhand';
+        font-size: 1.38rem;
+    }
+}
+
+header{
+    @include home;
+}
 
 .name{
     width: $gfold;

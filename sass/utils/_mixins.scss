@@ -5,3 +5,27 @@
 @mixin linear-gradient{
     background: linear-gradient( to top, $primary, $secondary)
 }
+
+@mixin opacity{
+    opacity: .5;
+}
+
+@mixin likefull {
+    color: $primary;
+    display: none;
+}
+
+@mixin likeheart{
+    .like{
+        &__empty{
+            display: none;
+        }
+        &__full{
+            display: flex;
+        }
+    }
+}
+
+@mixin colourpage{ 
+    background-color: darken($white, 5%)
+}

@@ -3,6 +3,12 @@
 @import "./sass/base/confs";
 @import "./sass/layout/header";
 @import "./sass/pages/home";
+@font-face{
+    font-family: 'Roboto';
+    src:local('/fonts/roboto/RobotoCondensed-Regular.ttf');
+    font-family: 'Shrikhand';
+    src:local('/fonts/shrikhand/Shrikhand-Regular.ttf');
+}
 
 
 body{
@@ -12,21 +18,19 @@ body{
     width: $gfold;
 }
 
-header{
-    text-align: center; 
-    position: relative;
-    height: 2rem;
-    padding-top: 1rem;
-}
-
-.logohead{ 
-    font-family: 'Shrikhand';
-    font-size: 1.38rem;
-}
-
 h2{
     padding: 2rem 1.5rem 0 1.5rem;
     font-size: 1rem;
+}
+
+.city:hover{
+        @include opacity;
+}
+
+.cityname{
+    border: none;
+    background-color: lighten($grey, 15%);
+    width: 6rem;
 }
 
 h3{
@@ -55,7 +59,7 @@ nav{
     cursor: $cursor;
     @include linear-gradient;
     &:hover{
-        opacity: .5;
+        @include opacity;
     }
 }
 
@@ -103,8 +107,8 @@ nav{
     background-color: lighten($grey, 20%);
     @include heading-shadow;
     &:hover{
-         background-color: lighten($primary, 35%);
-         &:hover > i{
+        background-color: lighten($primary, 35%);
+        &:hover > i{
         color:$primary;
         }
     }
@@ -129,7 +133,8 @@ main{
     height: 12rem;
     border-radius: 1rem; 
     position: relative;
-    @include heading-shadow; 
+    @include heading-shadow;
+    transition: transform .3s .2s; 
     transform: scale(1);
     &:hover{
         transform: scale(1.05);
@@ -180,30 +185,14 @@ main{
     cursor: $cursor;
 }
 
-.like__full{
-        display: none;
-}
-
 .like{
     &__full{
-    color: $secondary;
-    display: none;
+    @include likefull;
     }
-    &__empty{
-    color: $black;
-    }
-    &:active{
-        .like{
-            &__empty{
-                display: none;
-            }
-            &__full{
-                display: flex;
-            }
-        }
+    &:hover{
+        @include likeheart;       
     }
 }
-
 
 footer{
     padding: 1.5rem;
@@ -212,25 +201,28 @@ footer{
     opacity: .8;
     color: $white;
     font-size: 80%;
-    .logofoot{
-        font-family: 'Shrikhand';
-        font-size: 1rem;
-        padding-bottom: 1rem;
-    }
-    ul {
-        list-style: none;
-        text-align: left;
-        display: flex;
-        flex-direction: column;
-        line-height: 1.2rem;
-    }
-    li i{
-        width: 1.5rem;
-        cursor: $cursor;
-    }
-    li a{                 
-        text-decoration: none;
-        color: $white;
-    }
 }
 
+.logofoot{
+    font-family: 'Shrikhand';
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+    
+ul{
+    list-style: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2rem;
+}
+
+li i{
+    width: 1.5rem;
+    cursor: $cursor;
+}
+    
+li a{                 
+    text-decoration: none;
+    color: $white;
+}

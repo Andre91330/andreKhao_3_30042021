@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Roboto";
-  src: local("/fonts/roboto/RobotoCondensed-Regular.ttf");
-  font-family: "Shrikhand";
-  src: local("/fonts/shrikhand/Shrikhand-Regular.ttf");
-}
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
@@ -18,18 +12,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-}
-
-/* header */
-header {
-  text-align: center;
-  position: relative;
-}
-
-.logo {
-  padding-top: 0.5rem;
-  width: 100%;
-  height: 2.5rem;
 }
 
 .fa-arrow-left {
@@ -49,11 +31,21 @@ header {
   height: 14rem;
 }
 
-/* a revoir */
-.logo__head {
+@font-face {
+  font-family: "Roboto";
+  src: local("/fonts/roboto/RobotoCondensed-Regular.ttf");
   font-family: "Shrikhand";
-  font-size: 1.2rem;
-  color: #000;
+  src: local("/fonts/shrikhand/Shrikhand-Regular.ttf");
+}
+header .home {
+  text-align: center;
+  position: relative;
+  height: 2rem;
+  padding-top: 1rem;
+}
+header .logohead {
+  font-family: "Shrikhand";
+  font-size: 1.38rem;
 }
 
 .name {
