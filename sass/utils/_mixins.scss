@@ -6,6 +6,26 @@
     background: linear-gradient( to top, $primary, $secondary)
 }
 
+@mixin choix{
+    .choicestore{
+        text-decoration: none;
+        background-color: $secondary;
+        color: $white;
+        vertical-align: middle;
+        width: 70%;
+        padding: .6rem;
+        align-items: center;
+        border: none;
+        border-radius: 1.5rem;
+        margin: auto;
+        cursor: $cursor;
+        @include linear-gradient;
+        &:hover{
+            @include opacity;
+        }
+    }
+ }
+
 @mixin opacity{
     opacity: .5;
 }

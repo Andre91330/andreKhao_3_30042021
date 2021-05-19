@@ -28,6 +28,102 @@ header {
   font-size: 1.38rem;
 }
 
+body {
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 17.5rem;
+}
+
+h2 {
+  padding: 2rem 1.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+h3 {
+  padding: 2rem 0 0.5rem 1rem;
+}
+
+.like {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.like__full {
+  color: #9356DC;
+  display: none;
+}
+.like:hover .like__empty {
+  display: none;
+}
+.like:hover .like__full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choicestore .choicestore {
+  text-decoration: none;
+  background-color: #FF79DA;
+  color: #FFF;
+  vertical-align: middle;
+  width: 70%;
+  padding: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 1.5rem;
+  margin: auto;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.choicestore .choicestore:hover {
+  opacity: 0.5;
+}
+
+footer {
+  padding: 1.5rem;
+  width: 14.5rem;
+  background-color: #000;
+  opacity: 0.8;
+  color: #FFF;
+  font-size: 80%;
+}
+
+.logofoot {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 1.2rem;
+}
+
+li i {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  color: #FFF;
+}
+
 .city {
   width: 100%;
   height: 2rem;
@@ -45,24 +141,6 @@ header {
   text-align: center;
 }
 
-@font-face {
-  font-family: "Roboto";
-  src: local("/fonts/roboto/RobotoCondensed-Regular.ttf");
-  font-family: "Shrikhand";
-  src: local("/fonts/shrikhand/Shrikhand-Regular.ttf");
-}
-body {
-  font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  width: 17.5rem;
-}
-
-h2 {
-  padding: 2rem 1.5rem 0 1.5rem;
-  font-size: 1rem;
-}
-
 .city:hover {
   opacity: 0.5;
 }
@@ -71,10 +149,6 @@ h2 {
   border: none;
   background-color: #e6e6e6;
   width: 6rem;
-}
-
-h3 {
-  padding: 2rem 0 0.5rem 1rem;
 }
 
 nav {
@@ -240,61 +314,9 @@ main {
   background: #99E2D0;
 }
 
-.like {
-  font-size: 1.3rem;
-  position: absolute;
-  right: 1rem;
-  margin-top: 0;
-  cursor: pointer;
-}
-
-.like__full {
-  color: #9356DC;
-  display: none;
-}
-.like:hover .like__empty {
-  display: none;
-}
-.like:hover .like__full {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer {
-  padding: 1.5rem;
-  width: 14.5rem;
-  background-color: #000;
-  opacity: 0.8;
-  color: #FFF;
-  font-size: 80%;
-}
-
-.logofoot {
+@font-face {
+  font-family: "Roboto";
+  src: local("/fonts/roboto/RobotoCondensed-Regular.ttf");
   font-family: "Shrikhand";
-  font-size: 1rem;
-  padding-bottom: 1rem;
-}
-
-ul {
-  list-style: none;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  line-height: 1.2rem;
-}
-
-li i {
-  width: 1.5rem;
-  cursor: pointer;
-}
-
-li a {
-  text-decoration: none;
-  color: #FFF;
+  src: local("/fonts/shrikhand/Shrikhand-Regular.ttf");
 }/*# sourceMappingURL=style.css.map */

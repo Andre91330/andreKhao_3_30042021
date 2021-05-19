@@ -1,0 +1,36 @@
+body{
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    width: $gfold;
+}
+
+h2{
+    padding: 2rem 1.5rem 0 1.5rem;
+    font-size: 1rem;
+}
+
+h3{
+    padding: 2rem 0 .5rem 1rem;
+}
+
+.like{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1rem;
+    margin-top: 0;
+    cursor: $cursor;
+}
+
+.like{
+    &__full{
+    @include likefull;
+    }
+    &:hover{
+        @include likeheart;       
+    }
+}
+
+.choicestore{
+    @include choix;
+}
