@@ -3,12 +3,152 @@
 @import "./sass/base/confs";
 @import "./sass/layout/header";
 @import "./sass/layout/body";
-@import "./sass/layout/heart";
 @import "./sass/layout/footer";
 @import "./sass/pages/home";
+@import "./sass/pages/store";
 @font-face{
     font-family: 'Roboto';
-    src:local('/fonts/roboto/RobotoCondensed-Regular.ttf');
+    src:local('/fonts/roboto/RobotoCondensed-Light.ttf');
     font-family: 'Shrikhand';
     src:local('/fonts/shrikhand/Shrikhand-Regular.ttf');
 }
+
+@mixin likefull {
+    color: $primary;
+    display: none;
+}
+
+.like{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1rem;
+    
+    cursor: $cursor;
+}
+
+.restbrand .like{
+    margin-top: .3rem;
+    
+}
+
+.like{
+    &__full{
+    @include likefull;
+    }
+    &:hover{
+        @include likeheart;  
+    }
+}
+
+.logohead{ 
+    font-family: 'Shrikhand';
+    font-size: 1.38rem;
+    text-decoration: none;
+  }
+
+.resthead{
+    height: 2rem;
+}
+
+.fa-arrow-left{
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    cursor: $cursor;
+    color: $black;
+    transform: translate(200%, -100%);
+}
+
+.name{
+    width: $gfold;
+    height: 2rem;
+    padding-top: 1.3rem;
+    @include colourpage;
+    border-radius: 2rem 2rem 0 0;
+    position: absolute;
+    margin-top: -3.2rem;
+    h1{
+        font-family:'Shrikhand';
+        font-size: 1.2rem;
+        padding-left: 1rem;    
+    }
+    .like{
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+} 
+
+.name .like{
+    margin-top: -1.2rem;
+    margin-right: .8rem;
+}
+.banner img{
+    width: $gfold;
+    height: 14rem;
+}
+
+main{
+    @include colourpage;
+}
+
+h4{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .8rem;
+    padding: 1rem 0 .4rem 1rem;
+    &::after{
+        content:"";
+        display: block;
+        width: 2.2rem;
+        height: .2rem;
+        background: $tertiary;
+        margin-top: .4rem;
+    }
+}
+
+.starter, .maindish, .dessert, h5{
+    font-size: .7rem;
+}
+
+.dish{
+    color: $black;
+    margin: .5rem;
+    border: .1rem solid $black;
+    position: relative;
+}
+
+.dish--waistline{
+    @include btn;
+    width: 16rem;
+    height: 3rem;
+    display: flex;
+}
+
+.dish__name{
+    min-width: 12.9rem;
+    padding-top: .3rem; 
+    padding-left: .4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dish__price{
+    width: 3rem;
+    height: auto;
+    padding-top: 1.4rem;
+    border: .1rem solid red;
+}
+ 
+.dish__validate{
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+.logofoot{
+    font-family: 'Shrikhand';
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+

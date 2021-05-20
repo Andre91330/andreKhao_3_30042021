@@ -30,9 +30,12 @@
     opacity: .5;
 }
 
-@mixin likefull {
-    color: $primary;
-    display: none;
+@mixin btn{
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
 }
 
 @mixin likeheart{

@@ -34,6 +34,23 @@ nav{
     padding: 1rem 0 1.5rem 0;
 }
 
+.linkbtn {
+    vertical-align: middle;
+    width: 14.7rem;
+    padding: 0.8rem 0;
+    margin: 0.5rem 0 0.5rem 1.5rem;            align-items: center;
+    line-height: 1.5rem;
+    display: flex;
+    position: relative;
+    color: #000;
+    @include btn;
+  }
+  .linkbtn:hover {
+    background-color: #f2eafb;
+  }
+  .linkbtn:hover:hover > i {
+    color: #9356DC;
+  }
 
 
 #linker{

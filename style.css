@@ -23,18 +23,6 @@ header {
           box-shadow: 0 0.1rem 0.8rem #a7a7a7;
 }
 
-.logohead {
-  font-family: "Shrikhand";
-  font-size: 1.38rem;
-}
-
-body {
-  font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  width: 17.5rem;
-}
-
 h2 {
   padding: 2rem 1.5rem 0 1.5rem;
   font-size: 1rem;
@@ -42,27 +30,6 @@ h2 {
 
 h3 {
   padding: 2rem 0 0.5rem 1rem;
-}
-
-.like {
-  font-size: 1.3rem;
-  position: absolute;
-  right: 1rem;
-  margin-top: 0;
-  cursor: pointer;
-}
-
-.like__full {
-  color: #9356DC;
-  display: none;
-}
-.like:hover .like__empty {
-  display: none;
-}
-.like:hover .like__full {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .choicestore .choicestore {
@@ -159,25 +126,34 @@ nav {
   padding: 1rem 0 1.5rem 0;
 }
 
-.choicestore {
-  text-decoration: none;
-  background-color: #FF79DA;
-  color: #FFF;
+.linkbtn {
   vertical-align: middle;
-  width: 70%;
-  padding: 0.6rem;
+  width: 14.7rem;
+  padding: 0.8rem 0;
+  margin: 0.5rem 0 0.5rem 1.5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #000;
   border: none;
-  border-radius: 1.5rem;
-  margin: auto;
+  border-radius: 0.7rem;
   cursor: pointer;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+          box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
 }
-.choicestore:hover {
-  opacity: 0.5;
+
+.linkbtn:hover {
+  background-color: #f2eafb;
+}
+
+.linkbtn:hover:hover > i {
+  color: #9356DC;
 }
 
 #linker {
@@ -316,7 +292,151 @@ main {
 
 @font-face {
   font-family: "Roboto";
-  src: local("/fonts/roboto/RobotoCondensed-Regular.ttf");
+  src: local("/fonts/roboto/RobotoCondensed-Light.ttf");
   font-family: "Shrikhand";
   src: local("/fonts/shrikhand/Shrikhand-Regular.ttf");
+}
+.like {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.restbrand .like {
+  margin-top: 0.3rem;
+}
+
+.like__full {
+  color: #9356DC;
+  display: none;
+}
+.like:hover .like__empty {
+  display: none;
+}
+.like:hover .like__full {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logohead {
+  font-family: "Shrikhand";
+  font-size: 1.38rem;
+  text-decoration: none;
+}
+
+.resthead {
+  height: 2rem;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 0;
+  margin-top: 0;
+  cursor: pointer;
+  color: #000;
+  -webkit-transform: translate(200%, -100%);
+          transform: translate(200%, -100%);
+}
+
+.name {
+  width: 17.5rem;
+  height: 2rem;
+  padding-top: 1.3rem;
+  background-color: #f2f2f2;
+  border-radius: 2rem 2rem 0 0;
+  position: absolute;
+  margin-top: -3.2rem;
+}
+.name h1 {
+  font-family: "Shrikhand";
+  font-size: 1.2rem;
+  padding-left: 1rem;
+}
+.name .like {
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.name .like {
+  margin-top: -1.2rem;
+  margin-right: 0.8rem;
+}
+
+.banner img {
+  width: 17.5rem;
+  height: 14rem;
+}
+
+main {
+  background-color: #f2f2f2;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 0.8rem;
+  padding: 1rem 0 0.4rem 1rem;
+}
+h4::after {
+  content: "";
+  display: block;
+  width: 2.2rem;
+  height: 0.2rem;
+  background: #99E2D0;
+  margin-top: 0.4rem;
+}
+
+.starter, .maindish, .dessert, h5 {
+  font-size: 0.7rem;
+}
+
+.dish {
+  color: #000;
+  margin: 0.5rem;
+  border: 0.1rem solid #000;
+  position: relative;
+}
+
+.dish--waistline {
+  border: none;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  background-color: #f3f3f3;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+          box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+  width: 16rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dish__name {
+  min-width: 12.9rem;
+  padding-top: 0.3rem;
+  padding-left: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dish__price {
+  width: 3rem;
+  height: auto;
+  padding-top: 1.4rem;
+  border: 0.1rem solid red;
+}
+
+.dish__validate {
+  position: absolute;
+  right: 0;
+  display: none;
+}
+
+.logofoot {
+  font-family: "Shrikhand";
+  font-size: 1rem;
+  padding-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */
