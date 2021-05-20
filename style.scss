@@ -40,12 +40,6 @@
     }
 }
 
-.logohead{ 
-    font-family: 'Shrikhand';
-    font-size: 1.38rem;
-    text-decoration: none;
-  }
-
 .resthead{
     height: 2rem;
 }
@@ -56,7 +50,7 @@
     margin-top: 0;
     cursor: $cursor;
     color: $black;
-    transform: translate(200%, -100%);
+    transform: translate(150%, -0%);
 }
 
 .name{
@@ -146,7 +140,7 @@ h4{
     display: none;
 }
 
-.logofoot{
+.logofootR{
     font-family: 'Shrikhand';
     font-size: 1rem;
     padding-bottom: 1rem;
