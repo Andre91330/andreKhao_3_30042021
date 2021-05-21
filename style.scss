@@ -7,10 +7,10 @@
 @import "./sass/pages/home";
 @import "./sass/pages/store";
 @font-face{
-    font-family: 'Roboto';
-    src:local('/fonts/roboto/RobotoCondensed-Light.ttf');
-    font-family: 'Shrikhand';
-    src:local('/fonts/shrikhand/Shrikhand-Regular.ttf');
+    font-family: 'roboto';
+    src:local('fonts/roboto/RobotoCondensed-Light.ttf');
+    font-family: 'shrikhand';
+    src: url('Shrikhand-Regular.ttf') format('truetype');
 }
 
 @mixin likefull {
@@ -46,11 +46,10 @@
 
 .fa-arrow-left{
     position: absolute;
-    left: 0;
-    margin-top: 0;
+    left: 1rem;
+    margin-top: -1.3rem;
     cursor: $cursor;
     color: $black;
-    transform: translate(150%, -0%);
 }
 
 .name{
