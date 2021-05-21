@@ -62,12 +62,6 @@ footer {
   font-size: 80%;
 }
 
-.logofootR {
-  font-family: "Shrikhand";
-  font-size: 1rem;
-  padding-bottom: 1rem;
-}
-
 ul {
   list-style: none;
   text-align: left;
@@ -433,4 +427,8 @@ h4::after {
   font-family: "Shrikhand";
   font-size: 1rem;
   padding-bottom: 1rem;
+}
+.logofootR a {
+  text-decoration: none;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
