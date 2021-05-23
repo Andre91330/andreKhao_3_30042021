@@ -1,9 +1,13 @@
-@mixin heading-shadow{
-    box-shadow:.2rem .2rem 1rem lighten(grey, 30%)
+@mixin heading-shadow ($color:$grey){
+    box-shadow:.2rem .2rem 1rem lighten ($color, 30%);
+}
+
+@mixin shadowhover{
+    box-shadow: 0 0 1rem $black;
 }
 
 @mixin linear-gradient{
-    background: linear-gradient( to top, $primary, $secondary)
+    background: linear-gradient( to top, $primary, $secondary);
 }
 
 @mixin choix{
@@ -22,6 +26,7 @@
         @include linear-gradient;
         &:hover{
             @include opacity;
+            @include shadowhover;
         }
     }
  }
@@ -36,7 +41,10 @@
     cursor: pointer;
     background-color: #f3f3f3;
     box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
-}
+    &:hover{
+        @include shadowhover;
+    }
+    }
 
 @mixin likeheart{
     .like{

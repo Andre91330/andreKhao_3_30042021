@@ -51,6 +51,8 @@ h3 {
 }
 .choicestore .choicestore:hover {
   opacity: 0.5;
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
 }
 
 footer {
@@ -104,6 +106,8 @@ li a {
 
 .city:hover {
   opacity: 0.5;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.8rem #C0C0C0;
+          box-shadow: 0.5rem 0.5rem 0.8rem #C0C0C0;
 }
 
 .cityname {
@@ -140,6 +144,10 @@ nav {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+}
+.linkbtn:hover {
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
 }
 
 .linkbtn:hover {
@@ -200,8 +208,8 @@ nav {
   position: relative;
   color: #000;
   background-color: #f3f3f3;
-  -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
-          box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
+          box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
 }
 .linkbtn:hover {
   background-color: #f2eafb;
@@ -228,8 +236,8 @@ main {
   height: 12rem;
   border-radius: 1rem;
   position: relative;
-  -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
-          box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
+          box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
   -webkit-transition: -webkit-transform 0.3s 0.2s;
   transition: -webkit-transform 0.3s 0.2s;
   transition: transform 0.3s 0.2s;
@@ -240,6 +248,8 @@ main {
 .restcard:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
 }
 
 .restcard img {
@@ -290,6 +300,17 @@ main {
   font-family: "shrikhand";
   src: url("Shrikhand-Regular.ttf") format("truetype");
 }
+.choicestore:hover {
+  opacity: 0.5;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
+          box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
+}
+
+.linkbtn:hover {
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
+}
+
 .like {
   font-size: 1.3rem;
   position: absolute;
@@ -398,11 +419,17 @@ h4::after {
   display: -ms-flexbox;
   display: flex;
 }
+.dish--waistline:hover {
+  -webkit-box-shadow: 0 0 1rem #000;
+          box-shadow: 0 0 1rem #000;
+}
 
 .dish__name {
   min-width: 12.9rem;
   padding-top: 0.3rem;
   padding-left: 0.4rem;
+}
+.dish__name h5, .dish__name p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -419,14 +446,4 @@ h4::after {
   position: absolute;
   right: 0;
   display: none;
-}
-
-.logofootR {
-  font-family: "Shrikhand";
-  font-size: 1rem;
-  padding-bottom: 1rem;
-}
-.logofootR a {
-  text-decoration: none;
-  color: #FFF;
 }/*# sourceMappingURL=style.css.map */

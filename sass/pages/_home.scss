@@ -18,6 +18,7 @@
 
 .city:hover{
     @include opacity;
+    box-shadow: .5rem .5rem .8rem $grey;
 }
 
 .cityname{
@@ -49,7 +50,7 @@ nav{
     background-color: #f2eafb;
   }
   .linkbtn:hover:hover > i {
-    color: #9356DC;
+    color: #9356DC;  
   }
 
 
@@ -128,6 +129,7 @@ main{
     transform: scale(1);
     &:hover{
         transform: scale(1.05);
+        @include shadowhover;
     }
 }
 
