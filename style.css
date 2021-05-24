@@ -32,12 +32,11 @@ h3 {
   padding: 2rem 0 0.5rem 1rem;
 }
 
-.choicestore .choicestore {
+.choicestore .btn {
   text-decoration: none;
   background-color: #FF79DA;
   color: #FFF;
   vertical-align: middle;
-  width: 70%;
   padding: 0.6rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -49,10 +48,10 @@ h3 {
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(to top, #9356DC, #FF79DA);
 }
-.choicestore .choicestore:hover {
+.choicestore .btn:hover {
   opacity: 0.5;
-  -webkit-box-shadow: 0 0 1rem #000;
-          box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }
 
 footer {
@@ -146,8 +145,8 @@ nav {
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
 }
 .linkbtn:hover {
-  -webkit-box-shadow: 0 0 1rem #000;
-          box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }
 
 .linkbtn:hover {
@@ -172,11 +171,12 @@ nav {
 
 .linknumber {
   position: absolute;
-  margin-top: 1.5rem;
-  margin-left: 1rem;
-  padding-left: 0.33rem;
-  width: 0.9rem;
-  height: 1.2rem;
+  margin-top: 1.4rem;
+  margin-left: 0.8rem;
+  text-align: center;
+  padding: 0.2rem;
+  width: 1rem;
+  height: 1rem;
   color: #FFF;
   background-color: #9356DC;
   border-radius: 50rem;
@@ -248,8 +248,8 @@ main {
 .restcard:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-box-shadow: 0 0 1rem #000;
-          box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }
 
 .restcard img {
@@ -300,6 +300,13 @@ main {
   font-family: "shrikhand";
   src: url("Shrikhand-Regular.ttf") format("truetype");
 }
+.laoderspinner {
+  width: 70%;
+  height: 4rem;
+  border: 0.5rem solid #C0C0C0;
+  border-radius: 5rem;
+}
+
 .choicestore:hover {
   opacity: 0.5;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
@@ -307,8 +314,8 @@ main {
 }
 
 .linkbtn:hover {
-  -webkit-box-shadow: 0 0 1rem #000;
-          box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }
 
 .like {
@@ -316,6 +323,10 @@ main {
   position: absolute;
   right: 1rem;
   cursor: pointer;
+}
+
+.restbrand {
+  background-color: #FFF;
 }
 
 .restbrand .like {
@@ -420,8 +431,8 @@ h4::after {
   display: flex;
 }
 .dish--waistline:hover {
-  -webkit-box-shadow: 0 0 1rem #000;
-          box-shadow: 0 0 1rem #000;
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }
 
 .dish__name {
@@ -446,4 +457,28 @@ h4::after {
   position: absolute;
   right: 0;
   display: none;
+}
+
+.dessert {
+  margin-bottom: 0.5rem;
+}
+
+.order__btn {
+  text-decoration: none;
+  color: #FFF;
+  vertical-align: middle;
+  padding: 0.6rem 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.order__btn:hover {
+  opacity: 0.5;
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }/*# sourceMappingURL=style.css.map */

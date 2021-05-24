@@ -3,7 +3,7 @@
 }
 
 @mixin shadowhover{
-    box-shadow: 0 0 1rem $black;
+    box-shadow: 0 .2rem 1rem $black;
 }
 
 @mixin linear-gradient{
@@ -11,12 +11,11 @@
 }
 
 @mixin choix{
-    .choicestore{
+    .btn{
         text-decoration: none;
         background-color: $secondary;
         color: $white;
         vertical-align: middle;
-        width: 70%;
         padding: .6rem;
         align-items: center;
         border: none;
@@ -44,7 +43,7 @@
     &:hover{
         @include shadowhover;
     }
-    }
+}
 
 @mixin likeheart{
     .like{
