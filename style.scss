@@ -1,8 +1,10 @@
 @import "./sass/utils/variables";
 @import "./sass/utils/mixins";
 @import "./sass/base/confs";
+@import "./sass/layout/spinner";
 @import "./sass/layout/header";
 @import "./sass/layout/body";
+@import "./sass/layout/heart";
 @import "./sass/layout/footer";
 @import "./sass/pages/home";
 @import "./sass/pages/store";
@@ -12,14 +14,7 @@
     font-family: 'shrikhand';
     src: url('Shrikhand-Regular.ttf') format('truetype');
 }
-
-.laoderspinner{
-    width: 70%;
-    height: 4rem;
-    border: .5rem solid $grey;
-    border-radius: 5rem;
-}
-
+ 
 .choicestore:hover{
     opacity: .5;
     @include heading-shadow;
@@ -29,8 +24,8 @@
     @include shadowhover;
 }
 
-@mixin likefull {
-    color: $primary;
+@mixin likefull { 
+    color: $primary;   
     display: none;
 }
 
@@ -123,24 +118,35 @@ h4{
     font-size: .7rem;
 }
 
-.dish{
+.dishwaistline{
     color: $black;
-    margin: .5rem;
+    margin: .6rem;
     border: .1rem solid $black;
-    position: relative;
-}
-
-.dish--waistline{
-    @include btn;
     width: 16rem;
     height: 3rem;
+    @include btn;
+    &:hover{
+        transform:scale(1) rotate(1trun);
+        &:hover > .fa-check-circle{
+            transform: rotate(1turn);       /* ok */
+            transition: transform 1s ease-in-out;   /* ok */
+            transform:scale(1); /* a suivre */
+        }
+        &:hover > .dish__validate{  /* a ameliorer */  
+            display: flex;
+        }
+    }
+}
+
+.dish{
     display: flex;
 }
 
 .dish__name{
-    min-width: 12.9rem;
+    min-width: 10.1rem;
     padding-top: .3rem; 
     padding-left: .4rem;
+    flex-grow: 1;
     & h5, p{
         white-space: nowrap;
         overflow: hidden;
@@ -149,27 +155,44 @@ h4{
 }
 
 .dish__price{
-    width: 3rem;
-    height: auto;
-    padding-top: 1.4rem;
+    min-width: 2.4rem;
+    height: 1.7rem;
+    padding-top: 1.2rem;
     border: .1rem solid red;
 }
  
 .dish__validate{
-    position: absolute;
-    right: 0;
+    width: 3rem;
+    height: 3rem;
+    background-color: $tertiary;
+    border-radius: 0 .5rem .5rem 0;
+    min-width: 2.7rem;
+    display: flex;
+    align-items: center;
     display: none;
+}
+
+.fa-check-circle{
+    font-size: 1.5rem;
+    width: 2.4rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    color: $white;
+    background-color: $tertiary;
+    transform: rotate(0turn);
+    padding-left: .6rem;
 }
 
 .dessert{
     margin-bottom: .5rem;
 }
 
-.order__btn{
+.orderbtn{
     text-decoration: none;
     color: $white;
+    font-size: .8rem;
     vertical-align: middle;
-    padding: .6rem 3rem;
+    padding: .6rem 2rem;
     align-items: center;
     border: none;
     border-radius: 1.5rem;
@@ -179,4 +202,11 @@ h4{
         @include opacity;
         @include shadowhover;
     }
+}
+
+.order{
+    padding-top: 1.3rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
 }

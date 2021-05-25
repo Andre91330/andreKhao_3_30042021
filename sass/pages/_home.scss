@@ -1,3 +1,12 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+@import "../base/confs";
+@import "../layout/spinner";
+@import "../layout/body";
+@import "../layout/header";
+@import "../layout/heart";
+@import "../layout/footer";
+
 // navbarr
 .city{
     width: 100%;
@@ -43,14 +52,14 @@ nav{
     line-height: 1.5rem;
     display: flex;
     position: relative;
-    color: #000;
+    color: $black;
     @include btn;
   }
   .linkbtn:hover {
     background-color: #f2eafb;
   }
   .linkbtn:hover:hover > i {
-    color: #9356DC;  
+    color: $primary;  
   }
 
 

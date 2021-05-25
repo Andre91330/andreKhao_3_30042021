@@ -69,8 +69,8 @@ html {
 
 .spinner::after {
   content: "";
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   border: 0.3rem solid #99E2D0;
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
@@ -299,8 +299,8 @@ html {
 
 .spinner::after {
   content: "";
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   border: 0.3rem solid #99E2D0;
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
@@ -936,60 +936,35 @@ h4::after {
   font-size: 0.7rem;
 }
 
-.dishwaistline {
+.dish {
   color: #000;
-  margin: 0.6rem;
+  margin: 0.5rem;
   border: 0.1rem solid #000;
-  width: 16rem;
-  height: 3rem;
+  position: relative;
+}
+
+.dish--waistline {
   border: none;
   border-radius: 0.7rem;
   cursor: pointer;
   background-color: #f3f3f3;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+  width: 16rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.dishwaistline:hover {
+.dish--waistline:hover {
   -webkit-box-shadow: 0 0.2rem 1rem #000;
           box-shadow: 0 0.2rem 1rem #000;
 }
-.dishwaistline:hover {
-  -webkit-transform: scale(1) rotate(1trun);
-          transform: scale(1) rotate(1trun);
-}
-.dishwaistline:hover:hover > .fa-check-circle {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  /* ok */
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-  /* ok */
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  /* a suivre */
-}
-.dishwaistline:hover:hover > .dish__validate {
-  /* a ameliorer */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.dish {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
 .dish__name {
-  min-width: 10.1rem;
+  min-width: 12.9rem;
   padding-top: 0.3rem;
   padding-left: 0.4rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 .dish__name h5, .dish__name p {
   white-space: nowrap;
@@ -998,37 +973,32 @@ h4::after {
 }
 
 .dish__price {
-  min-width: 2.4rem;
-  height: 1.7rem;
-  padding-top: 1.2rem;
+  width: 3rem;
+  height: auto;
+  padding-top: 1.4rem;
   border: 0.1rem solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .dish__validate {
   width: 3rem;
-  height: 3rem;
-  background-color: #99E2D0;
-  border-radius: 0 0.5rem 0.5rem 0;
-  min-width: 2.7rem;
+  height: auto;
+  border: 0.1rem solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
 }
 
 .fa-check-circle {
-  font-size: 1.5rem;
-  width: 2.4rem;
-  height: 1.9rem;
-  border-radius: 50%;
+  width: 3rem;
+  height: auto;
+  border: 0.1rem solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #FFF;
-  background-color: #99E2D0;
-  -webkit-transform: rotate(0turn);
-          transform: rotate(0turn);
-  padding-left: 0.6rem;
 }
 
 .dessert {
