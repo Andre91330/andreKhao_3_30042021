@@ -14,20 +14,8 @@ html {
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  width: 17.5rem;
-}
-
-html {
-  font-size: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+p::first-letter {
+  text-transform: uppercase;
 }
 
 body {
@@ -44,6 +32,30 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 17.5rem;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 .spinner {
@@ -108,6 +120,10 @@ html {
   padding: 0;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 header {
   text-align: center;
   position: relative;
@@ -133,6 +149,10 @@ html {
   padding: 0;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
@@ -147,6 +167,10 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 h2 {
@@ -194,6 +218,10 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 footer {
@@ -244,20 +272,8 @@ html {
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  width: 17.5rem;
-}
-
-html {
-  font-size: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+p::first-letter {
+  text-transform: uppercase;
 }
 
 body {
@@ -274,6 +290,30 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 17.5rem;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 .spinner {
@@ -331,6 +371,10 @@ html {
   padding: 0;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
@@ -345,6 +389,10 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 h2 {
@@ -394,6 +442,10 @@ html {
   padding: 0;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 header {
   text-align: center;
   position: relative;
@@ -417,6 +469,10 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 footer {
@@ -508,10 +564,6 @@ nav {
   background-color: #f3f3f3;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
-}
-.linkbtn:hover {
-  -webkit-box-shadow: 0 0.2rem 1rem #000;
-          box-shadow: 0 0.2rem 1rem #000;
 }
 
 .linkbtn:hover {
@@ -675,20 +727,8 @@ html {
   padding: 0;
 }
 
-body {
-  font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  width: 17.5rem;
-}
-
-html {
-  font-size: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+p::first-letter {
+  text-transform: uppercase;
 }
 
 body {
@@ -707,6 +747,10 @@ html {
   padding: 0;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 body {
   font-family: "Roboto", Verdana, Tahoma, sans-serif;
   font-size: 0.9rem;
@@ -721,6 +765,30 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  font-family: "Roboto", Verdana, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  width: 17.5rem;
+}
+
+html {
+  font-size: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 h2 {
@@ -770,6 +838,10 @@ html {
   padding: 0;
 }
 
+p::first-letter {
+  text-transform: uppercase;
+}
+
 header {
   text-align: center;
   position: relative;
@@ -793,6 +865,10 @@ html {
 * {
   margin: 0;
   padding: 0;
+}
+
+p::first-letter {
+  text-transform: uppercase;
 }
 
 footer {
@@ -853,6 +929,10 @@ li a {
 
 .restbrand {
   background-color: #FFF;
+}
+.restbrand:hover {
+  -webkit-box-shadow: 0 0.2rem 1rem #000;
+          box-shadow: 0 0.2rem 1rem #000;
 }
 
 .restbrand .like {
@@ -949,33 +1029,6 @@ h4::after {
   -webkit-box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
           box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
 }
-.dishwaistline:hover {
-  -webkit-box-shadow: 0 0.2rem 1rem #000;
-          box-shadow: 0 0.2rem 1rem #000;
-}
-.dishwaistline:hover {
-  -webkit-transform: scale(1) rotate(1trun);
-          transform: scale(1) rotate(1trun);
-}
-.dishwaistline:hover:hover > .fa-check-circle {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  /* ok */
-  -webkit-transition: -webkit-transform 1s ease-in-out;
-  transition: -webkit-transform 1s ease-in-out;
-  transition: transform 1s ease-in-out;
-  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
-  /* ok */
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  /* a suivre */
-}
-.dishwaistline:hover:hover > .dish__validate {
-  /* a ameliorer */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 
 .dish {
   display: -webkit-box;
@@ -1013,24 +1066,30 @@ h4::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
+  /* none */
 }
-
-.fa-check-circle {
+.dish__validate .fa-check-circle {
   font-size: 1.5rem;
-  width: 2.4rem;
-  height: 1.9rem;
-  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25px;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
   color: #FFF;
   background-color: #99E2D0;
   -webkit-transform: rotate(0turn);
           transform: rotate(0turn);
-  padding-left: 0.6rem;
+}
+.dish__validate .fa-check-circle:hover {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
+/* .dish:hover > .dish__validate{display: flex;transform: scaleX(1)} */
 .dessert {
   margin-bottom: 0.5rem;
 }
@@ -1065,4 +1124,35 @@ h4::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.containermail {
+  background-color: #99E2D0;
+  width: 100%;
+  height: 10rem;
+}
+
+.form__group {
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+.form__group input {
+  border: 0.125rem solid #FFF;
+  border-radius: 100rem;
+  color: #9356DC;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  width: 75%;
+  -webkit-transition: background-color 500ms;
+  transition: background-color 500ms;
+}
+.form__group input:focus {
+  border: 0.125rem solid #9356DC;
+}
+.form__group input:not(:focus):invalid {
+  background-color: #FF79DA;
+  border: 0.125rem solid black;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

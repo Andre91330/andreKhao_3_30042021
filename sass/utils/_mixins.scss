@@ -44,9 +44,6 @@
     cursor: pointer;
     background-color: #f3f3f3;
     box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
-    &:hover{
-        @include shadowhover;
-    }
 }
 
 @mixin likeheart{
