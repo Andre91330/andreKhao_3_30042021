@@ -135,7 +135,7 @@ main{
     border-radius: 1rem; 
     position: relative;
     @include heading-shadow;
-    transition: transform .3s .2s; 
+    transition: transform .5s .2s; 
     transform: scale(1);
     &:hover{
         transform: scale(1.05);

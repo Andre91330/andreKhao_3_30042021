@@ -669,10 +669,10 @@ main {
   position: relative;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
           box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
-  -webkit-transition: -webkit-transform 0.3s 0.2s;
-  transition: -webkit-transform 0.3s 0.2s;
-  transition: transform 0.3s 0.2s;
-  transition: transform 0.3s 0.2s, -webkit-transform 0.3s 0.2s;
+  -webkit-transition: -webkit-transform 0.5s 0.2s;
+  transition: -webkit-transform 0.5s 0.2s;
+  transition: transform 0.5s 0.2s;
+  transition: transform 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
@@ -1048,8 +1048,44 @@ h4::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-animation: meal 5s ease;
+          animation: meal 5s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
+.starter {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.maindish {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+.dessert {
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
+}
+
+@-webkit-keyframes meal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes meal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .dish__name {
   min-width: 10.1rem;
   padding-top: 0.3rem;

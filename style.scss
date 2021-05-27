@@ -131,7 +131,30 @@ h4{
 }
 
 .dish{
-    display: flex;   
+    display: flex;
+    animation: meal 5s ease; 
+    animation-fill-mode: forwards;
+}
+
+.starter{    
+    animation-delay: 1s;
+}
+
+.maindish{  
+    animation-delay: 6s;
+}
+
+.dessert{
+    animation-delay: 12s;
+}
+
+@keyframes meal{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
         
 .dish__name{
