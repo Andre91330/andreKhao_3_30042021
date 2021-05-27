@@ -94,21 +94,21 @@ p::first-letter {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: spinner 3s ease infinite;
-          animation: spinner 3s ease infinite;
+  -webkit-animation: spinner 1s ease 3s infinite;
+          animation: spinner 1s ease 3s infinite;
 }
 
 @-webkit-keyframes spinner {
   to {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 
 @keyframes spinner {
   to {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 body {
@@ -359,14 +359,14 @@ p::first-letter {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: spinner 3s ease infinite;
-          animation: spinner 3s ease infinite;
+  -webkit-animation: spinner 1s ease 3s infinite;
+          animation: spinner 1s ease 3s infinite;
 }
 
 @keyframes spinner {
   to {
-    -webkit-transform: rotate(3turn);
-            transform: rotate(3turn);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
   }
 }
 body {
@@ -953,6 +953,9 @@ li a {
   margin-top: 0.3rem;
 }
 
+.like {
+  fill-rule: forwards;
+}
 .like__full {
   color: #9356DC;
   display: none;

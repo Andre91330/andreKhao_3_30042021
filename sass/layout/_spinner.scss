@@ -36,12 +36,12 @@
     border-top-color: $primary;
     border-bottom-color: $secondary;
     border-radius: 50%;
-    animation: spinner 3s ease infinite;
+    animation: spinner 1s ease 3s infinite;
 }
 
 
 @keyframes spinner{
     to {
-        transform: rotate(3turn);
+        transform: rotate(1turn);
     }
 }
