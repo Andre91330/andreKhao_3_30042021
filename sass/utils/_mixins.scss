@@ -7,7 +7,7 @@
 }
 
 @mixin shadowhover{
-    box-shadow: 0 .2rem .9rem $black;
+    box-shadow: 0 .2rem .9rem lighten($color: $black, $amount: 60%);
 }
 
 @mixin linear-gradient{

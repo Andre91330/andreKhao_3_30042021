@@ -165,8 +165,8 @@ h3 {
 }
 .choicestore .btn:hover {
   opacity: 0.5;
-  -webkit-box-shadow: 0 0.2rem 0.9rem #000;
-          box-shadow: 0 0.2rem 0.9rem #000;
+  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
+          box-shadow: 0 0.2rem 0.9rem #999999;
 }
 
 body {
@@ -404,8 +404,8 @@ main {
 .restcard:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  -webkit-box-shadow: 0 0.2rem 0.9rem #000;
-          box-shadow: 0 0.2rem 0.9rem #000;
+  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
+          box-shadow: 0 0.2rem 0.9rem #999999;
 }
 
 .restcard img {
@@ -463,8 +463,8 @@ main {
 }
 
 .linkbtn:hover {
-  -webkit-box-shadow: 0 0.2rem 0.9rem #000;
-          box-shadow: 0 0.2rem 0.9rem #000;
+  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
+          box-shadow: 0 0.2rem 0.9rem #999999;
 }
 
 .like {
@@ -478,8 +478,8 @@ main {
   background-color: #FFF;
 }
 .restbrand:hover {
-  -webkit-box-shadow: 0 0.2rem 0.9rem #000;
-          box-shadow: 0 0.2rem 0.9rem #000;
+  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
+          box-shadow: 0 0.2rem 0.9rem #999999;
 }
 
 .restbrand .like {
@@ -697,8 +697,8 @@ h4::after {
 }
 .orderbtn:hover {
   opacity: 0.5;
-  -webkit-box-shadow: 0 0.2rem 0.9rem #000;
-          box-shadow: 0 0.2rem 0.9rem #000;
+  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
+          box-shadow: 0 0.2rem 0.9rem #999999;
 }
 
 .order {
