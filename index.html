@@ -8,19 +8,19 @@
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
                         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
                         crossorigin="anonymous">  
-                <link rel="html" href="./html/laPaletteduGout.html">
-                <link rel="html" href="./html/laNoteEnchantee.html">
-                <link rel="html" href="./html/alaFrancaise.html">
-                <link rel="html" href="./html/leDelicedesSens.html">                                        
+                <link rel="html" href="./page/laPaletteduGout.html">
+                <link rel="html" href="./page/laNoteEnchantee.html">
+                <link rel="html" href="./page/alaFrancaise.html" >
+                <link rel="html" href="./page/leDelicedesSens.html">                                        
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         </head>
         <body>
-                <div class="container">
-                        <div class="spinner spinner--full-height"></div>                        </div>
+                <div class="spinnerLoader">
+                        <div class="spinner"></div>                       
                 </div>        
                 <header>
                         <div class="logohead">
-                                <img src="./sass/base/maquetteohmyfood/logo/ohmyfood@2x.svg" alt="logo ohmyfood" width="130" />      
+                                <img src="./images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" width="130" />      
                         </div>            
                 </header>
                 <nav>
@@ -59,14 +59,14 @@
                 </nav>        
                 <main>
                         <div id="restaurants">
-                                <h3>Restaurants</h3>
+                                <h1 class="store">Restaurants</h1>
                         </div>
                         <div class="restcard">
-                                <a href="./html/laPaletteduGout.html">
+                                <a href="./page/laPaletteduGout.html">
                                         <span class="new">Nouveau</span>
-                                        <img src="./sass/base/maquetteohmyfood/restaurants/palette_petit.jpg" alt="Restaurant La Palette du goût"/></a>
+                                        <img src="./images/restaurants/palette_moyen.jpg" alt="Restaurant La Palette du goût"/></a>
                                 <div class="restbrand">
-                                        <a href="./html/laPaletteduGout.html"><strong>La palette du goût</strong>
+                                        <a href="./page/laPaletteduGout.html"><strong>La palette du goût</strong>
                                         <p>Ménilmontant</p></a>
                                         <div class="like">
                                                 <span class="like__empty">
@@ -77,11 +77,11 @@
                                 </div>  
                         </div>                          
                         <div class="restcard">
-                                <a href="./html/laNoteEnchantee.html">
+                                <a href="./page/laNoteEnchantee.html">
                                         <span class="new">Nouveau</span>
-                                        <img src="./sass/base/maquetteohmyfood/restaurants/note_petit.jpg" alt="Restaurant La note enchantée"/></a>
+                                        <img src="./images/restaurants/note_moyen.jpg" alt="Restaurant La note enchantée"/></a>
                                 <div class="restbrand">
-                                        <a href="./html/laNoteEnchantee.html"><strong>La note enchantée</strong>
+                                        <a href="./page/laNoteEnchantee.html"><strong>La note enchantée</strong>
                                         <p>Charonne</p></a>
                                         <div class="like">
                                                 <span class="like__empty">
@@ -92,10 +92,10 @@
                                 </div>
                         </div>        
                         <div class="restcard">
-                                <a href="./html/alaFrancaise.html">
-                                        <img src="./sass/base/maquetteohmyfood/restaurants/Francaise_petit.jpg" alt="Restaurant A la française"/></a>
+                                <a href="./page/alaFrancaise.html">
+                                        <img src="./images/restaurants/francaise_moyen.jpg" alt="Restaurant A la française"/></a>
                                 <div class="restbrand">
-                                        <a href="./html/alaFrancaise.html"><strong>A la française</strong>
+                                        <a href="./page/alaFrancaise.html"><strong>A la française</strong>
                                         <p>Cité Rouge</p></a>
                                         <div class="like">
                                                 <span class="like__empty">
@@ -106,10 +106,10 @@
                                 </div>
                         </div>
                         <div class="restcard">
-                                <a href="./html/leDelicedesSens.html">
-                                        <img src="./sass/base/maquetteohmyfood/restaurants/delice_petit.jpg" alt="Le délice des sens" /></a>
+                                <a href="./page/leDelicedesSens.html">
+                                        <img src="./images/restaurants/delice_moyen.jpg" alt="Le délice des sens" /></a>
                                 <div class="restbrand">
-                                        <a href="./html/leDelicedesSens.html"><strong>Le délice des sens</strong>
+                                        <a href="./page/leDelicedesSens.html"><strong>Le délice des sens</strong>
                                                 <p>Folie-Méricourt</p></a>
                                         <div class="like">
                                                 <span class="like__empty">
@@ -141,7 +141,7 @@
                                         <li><i class="fa fa-hands-helping"></i>
                                                 <a href="#">Devenir partenaire</a></li>       
                                         <li><a href="#">Mentions légales</a></li>
-                                        <li><a href="./html/mail.html">Contact</a></li>
+                                        <li><a href="./page/mail.html">Contact</a></li>
                                 </ul>
                         </div>
                 </footer>
