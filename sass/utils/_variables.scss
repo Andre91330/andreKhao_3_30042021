@@ -10,5 +10,7 @@ $green: green;
 // curseur
 $cursor: pointer;
 
-// tailles
-$gfold: 17.5rem;
+//responsive
+$breakpoints: (
+    mobile: 539px
+);

@@ -1,9 +1,6 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-
-
-
 // navbarr
 .city{
     width: 100%;
@@ -51,18 +48,31 @@ nav{
     display: flex;
     position: relative;
     color: $black;
-    @include btn;
-  }
+    @include btn; 
   .linkbtn:hover {
     background-color: #f2eafb;
   }
   .linkbtn:hover:hover > i {
     color: $primary;  
   }
-
+}
 
 #linker{
     margin-bottom: 1rem;
+}
+
+.resplink, .resprest{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include mobile-only{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.resplink{
+    justify-content: space-around;
 }
 
 .link{
@@ -120,9 +130,14 @@ nav{
 }
 
 /* main */
-.store{
-    font-size: small;
-    padding: .5rem 0 0 1rem;
+.headline{
+    font-size: .95rem;
+    padding: 2rem 0 .5rem 1rem;
+    @include mobile-only{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
 }
 
 main{

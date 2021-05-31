@@ -30,6 +30,7 @@
         &:hover{
             @include opacity;
             @include shadowhover;
+            color: $black;
         }
     }
  }
@@ -59,4 +60,10 @@
 
 @mixin colourpage{ 
     background-color: darken($white, 5%)
+}
+
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints, mobile)){
+         @content;
+    }
 }

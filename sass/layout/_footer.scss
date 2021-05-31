@@ -1,13 +1,21 @@
 @import "../utils/variables";
+@import "../utils/mixins";
 @import "../base/confs";
 
 footer{
     padding: 1.5rem;
-    width: 14.5rem;
+    width: auto;
     background-color: $black;
     opacity: .8;
     color: $white;
     font-size: 80%;
+}
+
+.logofoot{
+    @include mobile-only{
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
 ul{
@@ -16,6 +24,12 @@ ul{
     display: flex;
     flex-direction: column;
     line-height: 1.2rem;
+    @include mobile-only{
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: small;
+        padding-left: 1rem;
+    }
 }
 
 li i{
