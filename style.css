@@ -38,55 +38,38 @@ p::first-letter {
   text-transform: uppercase;
 }
 
-body {
-  font-family: "Roboto", Verdana, Tahoma, sans-serif;
-  font-size: 0.9rem;
-  line-height: 1rem;
-  width: auto;
-}
-
-html {
-  font-size: 100%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-p::first-letter {
-  text-transform: uppercase;
-}
-
 .spinner {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 10002;
   content: "";
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 46%;
+  left: 46%;
   width: 3rem;
   height: 3rem;
   border: 0.3rem solid #99E2D0;
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: spinner 1s ease 3s infinite;
-          animation: spinner 1s ease 3s infinite;
+  -webkit-animation: spinner 4s linear forwards;
+          animation: spinner 4s linear forwards;
+  opacity: 1;
 }
 
 @-webkit-keyframes spinner {
   to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+    -webkit-transform: rotate(4turn);
+            transform: rotate(4turn);
+    opacity: 0;
   }
 }
 
 @keyframes spinner {
   to {
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
+    -webkit-transform: rotate(4turn);
+            transform: rotate(4turn);
+    opacity: 0;
   }
 }
 header {
@@ -615,15 +598,35 @@ h4::after {
   margin-top: 0.4rem;
 }
 
-.starter, .maindish, .dessert, h5 {
+h5 {
   font-size: 0.7rem;
+}
+
+.starter, .maindish, .dessert {
+  font-size: 0.7rem;
+  opacity: 0;
+}
+
+.starter {
+  -webkit-animation: appear 3s ease forwards;
+          animation: appear 3s ease forwards;
+}
+
+.maindish {
+  -webkit-animation: appear 8s ease forwards;
+          animation: appear 8s ease forwards;
+}
+
+.dessert {
+  -webkit-animation: appear 13s ease forwards;
+          animation: appear 13s ease forwards;
 }
 
 .dishwaistline {
   color: #000;
   margin: 0.6rem;
   border: 0.1rem solid #000;
-  width: 16rem;
+  width: 16.25rem;
   height: 3rem;
   border: none;
   border-radius: 0.7rem;
@@ -637,28 +640,9 @@ h4::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: meal 5s ease;
-          animation: meal 5s ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
-.starter {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-.maindish {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-.dessert {
-  -webkit-animation-delay: 12s;
-          animation-delay: 12s;
-}
-
-@-webkit-keyframes meal {
+@-webkit-keyframes appear {
   0% {
     opacity: 0;
   }
@@ -667,7 +651,7 @@ h4::after {
   }
 }
 
-@keyframes meal {
+@keyframes appear {
   0% {
     opacity: 0;
   }
@@ -697,23 +681,23 @@ h4::after {
 }
 
 .dish__validate {
-  width: 3rem;
-  height: 3rem;
+  height: 2rem;
   background-color: #99E2D0;
   border-radius: 0 0.5rem 0.5rem 0;
-  min-width: 2.7rem;
+  min-width: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* none */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
 }
 .dish__validate .fa-check-circle {
-  font-size: 1.5rem;
-  width: 2rem;
-  height: 2rem;
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
   border-radius: 25px;
-  padding-top: 0.5rem;
-  padding-left: 0.5rem;
   color: #FFF;
   background-color: #99E2D0;
   -webkit-transform: rotate(0turn);
@@ -728,10 +712,6 @@ h4::after {
   transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 
-/*  &:hover > .dish__validate{
-    display: flex;
-    transform: scaleX(1)
-}.dish:hover > .dish__validate{display: flex;transform: scaleX(1)} */
 .dessert {
   margin-bottom: 0.5rem;
 }
