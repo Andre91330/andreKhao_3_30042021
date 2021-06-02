@@ -1,0 +1,23 @@
+@import "../utils/mixins";
+@import "../utils/variables";
+
+@mixin likefull { 
+    color: $primary;   
+    display: none;
+}
+
+.like{
+    font-size: 1.3rem;
+    position: absolute;
+    right: 1rem;   
+    cursor: $cursor;
+}
+
+.like{
+    &__full{
+    @include likefull;
+    }
+    &:hover{
+        @include likeheart;  
+    }
+}

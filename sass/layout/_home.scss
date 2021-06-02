@@ -1,7 +1,16 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-// navbarr
+
+h2{
+    padding: 2rem 1.5rem 0 1.5rem;
+    font-size: 1rem;
+}
+
+nav{
+    font-size: .8rem;
+}
+
 .city{
     width: 100%;
     height: 2rem;
@@ -10,6 +19,7 @@
     text-align: center;
     vertical-align: middle;
     cursor: $cursor;
+    transition: opacity .3s .5s;
 }
 
 .choice{
@@ -30,31 +40,28 @@
     width: 6rem;
 }
 
-nav{
-    font-size: .8rem;
+.choicestore{
+    @include choix;
+    transition: opacity .3s .3s;
+}
+
+.choicestore:hover{
+    opacity: .5;
+    @include heading-shadow;
 }
 
 .choice p{
     padding: 1rem 0 1.5rem 0;
 }
 
-.linkbtn {
-    vertical-align: middle;
-    width: 14.7rem;
-    padding: 0.8rem 0;
-    margin: 0.5rem 0 0.5rem 1.5rem;            
-    align-items: center;
-    line-height: 1.5rem;
-    display: flex;
-    position: relative;
-    color: $black;
-    @include btn; 
-  .linkbtn:hover {
-    background-color: #f2eafb;
-  }
-  .linkbtn:hover:hover > i {
-    color: $primary;  
-  }
+.headline{
+    font-size: .95rem;
+    padding: 2rem 0 .5rem 1rem;
+    @include mobile-only{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
 }
 
 #linker{
@@ -113,7 +120,8 @@ nav{
     display: flex;
     position: relative;
     color: $black;
-    background-color: lighten($grey, 20%);
+    background-color: lighten($grey, 20%); 
+    transition: background-color .3s .5s;
     @include heading-shadow;
     &:hover{
         background-color: lighten($primary, 35%);
@@ -129,15 +137,8 @@ nav{
     font-weight: bold;
 }
 
-/* main */
-.headline{
-    font-size: .95rem;
-    padding: 2rem 0 .5rem 1rem;
-    @include mobile-only{
-        display: flex;
-        justify-content: center;
-        font-size: 1.2rem;
-    }
+.linkbtn:hover {
+    @include shadowhover;
 }
 
 main{
@@ -152,7 +153,7 @@ main{
     border-radius: 1rem; 
     position: relative;
     @include heading-shadow;
-    transition: transform .5s .2s; 
+    transition: transform .3s .5s; 
     transform: scale(1);
     &:hover{
         transform: scale(1.05);
@@ -166,6 +167,7 @@ main{
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
 }
+
 .restbrand{ 
     height: 3rem;
     border-radius: 0 0 1rem 1rem; 
@@ -177,13 +179,21 @@ main{
     cursor: $cursor;
     display: flex;
     flex-direction: column;
+    background-color: $white;
+    & a{
+        text-decoration: none;
+        color: $black;
+    }        
+    &:hover{
+        @include shadowhover;
+        
+    }
 }
 
-.restbrand a{
-    text-decoration: none;
-    color: $black;
+.restbrand .like{
+    margin-top: .3rem;  
 }
- 
+
 .new{
     position: absolute;
     font-weight: bold;

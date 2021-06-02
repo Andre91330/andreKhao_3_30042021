@@ -1,6 +1,4 @@
 @import "./variables";
-@import "../base/confs";
-
 
 @mixin heading-shadow ($color:$grey){
     box-shadow:.2rem .2rem 1rem lighten ($color, 30%);
@@ -26,6 +24,7 @@
         border-radius: 1.5rem;
         margin: auto;
         cursor: $cursor;
+        font-weight: bold;
         @include linear-gradient;
         &:hover{
             @include opacity;
@@ -65,5 +64,11 @@
 @mixin mobile-only {
     @media screen and (min-width: map-get($breakpoints, mobile)){
          @content;
+    }
+}
+
+@mixin xsmall{
+    @media screen and (min-width: map-get($breakpoints, xsmall)){
+        @content;
     }
 }

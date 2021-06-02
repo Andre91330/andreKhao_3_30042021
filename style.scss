@@ -14,48 +14,7 @@
     font-family: 'shrikhand';
     src:local('Shrikhand-Regular.ttf');
 }
- 
-.choicestore:hover{
-    opacity: .5;
-    @include heading-shadow;
-}
 
-.linkbtn:hover {
-    @include shadowhover;
-}
-
-@mixin likefull { 
-    color: $primary;   
-    display: none;
-}
-
-.like{
-    font-size: 1.3rem;
-    position: absolute;
-    right: 1rem;   
-    cursor: $cursor;
-}
-
-
-.restbrand{
-    background-color: $white;
-    &:hover{
-        @include shadowhover;
-    }
-}
-
-.restbrand .like{
-    margin-top: .3rem;  
-}
-
-.like{
-    &__full{
-    @include likefull;
-    }
-    &:hover{
-        @include likeheart;  
-    }
-}
 
 .resthead{
     height: 2rem;
@@ -103,7 +62,7 @@ main{
     @include colourpage;
 }
 
-h4{
+.platter{
     text-transform: uppercase;
     font-weight: normal;
     font-size: .8rem;
@@ -118,34 +77,21 @@ h4{
     }
 }
 
-h5{
+h3{
     font-size: .7rem;
 }
-
-.starter, .maindish, .dessert{
-    font-size: .7rem;
-    opacity: 0;
-}
-
-.starter{    
-    animation: appear 3s ease forwards;
-}
-
-.maindish{  
-    animation: appear 8s ease forwards;
-}
-
-.dessert{
-    animation: appear 13s ease forwards;
-} 
 
 .dishwaistline{
     color: $black;
     margin: .6rem;
     border: .1rem solid $black;
-    width: 16.25rem;
+    width: 95%;
     height: 3rem;
-    @include btn;     
+    @include btn; 
+    @include xsmall{
+        width: 16rem;
+    }
+
 }
 
 .dish{
@@ -166,7 +112,7 @@ h5{
     padding-top: .3rem; 
     padding-left: .4rem;
     flex-grow: 1;
-    & h5, p{
+    & h3, p{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -194,72 +140,35 @@ h5{
         height: 1.1rem;
         border-radius: 25px;
         color: $white;
-        background-color: $tertiary;
-        transform: rotate(0turn); 
+        background-color: $tertiary; 
         &:hover{
             transform: rotate(1turn);
-            transition: transform 1s ease-in-out; 
+            transition: transform 1s linear; 
         }     
     }
 }
 
+.starter, .maindish, .dessert{
+    font-size: .7rem;
+    opacity: 0;
+}
+
+.starter{    
+    animation: appear 2s ease forwards;
+}
+
+.maindish{  
+    animation: appear 2s ease 1s forwards;
+}
+
 .dessert{
-    margin-bottom: .5rem;
-}
+    animation: appear 2s ease 2s forwards;
+} 
 
-.orderbtn{
-    text-decoration: none;
-    color: $white;
-    font-size: .8rem;
-    vertical-align: middle;
-    padding: .6rem 2rem;
-    align-items: center;
-    border: none;
-    border-radius: 1.5rem;
-    cursor: $cursor;
-    @include linear-gradient;
-    &:hover{
-        @include opacity;
-        @include shadowhover;
-        color: $black;
-    }
-}
-
-.order{
-    padding-top: 1.3rem;
-    padding-bottom: 1.5rem;
+.meal{
+    @include xsmall{
     display: flex;
-    justify-content: center;
-}
-
-.containermail{
-    background-color: $tertiary;
-    width: 100%;
-    height: 10rem;
-}
-
-.form{
-    &__group{
-    padding-top: 2rem;
-    padding-left: 1rem;
-        & input{
-            border: .125rem solid $white;
-            border-radius: 100rem;
-            color: $primary;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
-            outline: none;
-            padding: .5rem 1.5rem;
-            width: 75%;
-            transition: background-color 500ms;
-            &:focus{
-                border: .125rem solid $primary;
-            }
-            &:not(:focus):invalid{
-                background-color: $secondary;
-                border: .125rem solid black;
-                color: white;
-            }
-        }
+    justify-content: space-around;
+    flex-wrap: wrap;
     }
 }

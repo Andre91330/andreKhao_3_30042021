@@ -1,3 +1,28 @@
+@import "../utils/mixins";
 
 
+.orderbtn{
+    text-decoration: none;
+    color: $white;
+    font-size: .8rem;
+    vertical-align: middle;
+    padding: .6rem 2rem;
+    align-items: center;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: $cursor;
+    @include linear-gradient;
+    transition: opacity .3s .3s;
+    &:hover{
+        @include opacity;
+        color: $black;
+    }
+}
+
+.order{
+    padding-top: 1.3rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
   
