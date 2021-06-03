@@ -32,23 +32,23 @@ p::first-letter {
   border-top-color: #9356DC;
   border-bottom-color: #FF79DA;
   border-radius: 50%;
-  -webkit-animation: spinner 2s linear forwards;
-          animation: spinner 2s linear forwards;
+  -webkit-animation: spinner 3s linear forwards;
+          animation: spinner 3s linear forwards;
   opacity: 1;
 }
 
 @-webkit-keyframes spinner {
   to {
-    -webkit-transform: rotate(4turn);
-            transform: rotate(4turn);
+    -webkit-transform: rotate(6turn);
+            transform: rotate(6turn);
     opacity: 0;
   }
 }
 
 @keyframes spinner {
   to {
-    -webkit-transform: rotate(4turn);
-            transform: rotate(4turn);
+    -webkit-transform: rotate(6turn);
+            transform: rotate(6turn);
     opacity: 0;
   }
 }
@@ -190,24 +190,20 @@ nav {
   -webkit-transition: opacity 0.3s 0.5s;
   transition: opacity 0.3s 0.5s;
 }
+.city .cityname {
+  border: none;
+  background-color: #e6e6e6;
+  width: 7rem;
+  color: #000;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
 
 .choice {
   width: auto;
   height: 13rem;
   background-color: #f3f3f3;
   text-align: center;
-}
-
-.city:hover {
-  opacity: 0.5;
-  -webkit-box-shadow: 0.5rem 0.5rem 0.8rem #C0C0C0;
-          box-shadow: 0.5rem 0.5rem 0.8rem #C0C0C0;
-}
-
-.cityname {
-  border: none;
-  background-color: #e6e6e6;
-  width: 6rem;
 }
 
 .choicestore {
@@ -232,7 +228,7 @@ nav {
   background: linear-gradient(to top, #9356DC, #FF79DA);
 }
 .choicestore .btn:hover {
-  opacity: 0.5;
+  opacity: 0.9;
   -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
           box-shadow: 0 0.2rem 0.9rem #999999;
   color: #000;
@@ -340,8 +336,8 @@ nav {
   position: relative;
   color: #000;
   background-color: #f3f3f3;
-  -webkit-transition: background-color 0.3s 0.5s;
-  transition: background-color 0.3s 0.5s;
+  -webkit-transition: background-color 0.3s 0.3s;
+  transition: background-color 0.3s 0.3s;
   -webkit-box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
           box-shadow: 0.2rem 0.2rem 1rem lighten #C0C0C0, 30%;
 }
@@ -458,7 +454,7 @@ main {
   transition: opacity 0.3s 0.3s;
 }
 .orderbtn:hover {
-  opacity: 0.5;
+  opacity: 0.9;
   color: #000;
 }
 
@@ -548,7 +544,6 @@ h3 {
 .dishwaistline {
   color: #000;
   margin: 0.6rem;
-  border: 0.1rem solid #000;
   width: 95%;
   height: 3rem;
   border: none;
@@ -599,27 +594,83 @@ h3 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-animation: raise 3s linear forwards;
+          animation: raise 3s linear forwards;
+}
+
+@-webkit-keyframes raise {
+  0% {
+    -webkit-transform: translate(0, 0.5rem);
+            transform: translate(0, 0.5rem);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes raise {
+  0% {
+    -webkit-transform: translate(0, 0.5rem);
+            transform: translate(0, 0.5rem);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+.dishpricevalidate {
+  /* oeuf au plat */
+  width: 2.4rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  overflow: hidden;
+}
+.dishpricevalidate:hover {
+  width: 5rem;
+  -webkit-transition: width 0.5s linear;
+  transition: width 0.5s linear;
+}
+.dishpricevalidate:hover + .fa-check-circle {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 .dish__price {
   min-width: 2.4rem;
-  height: 1.7rem;
+  height: 1.6rem;
   padding-top: 1.2rem;
-  border: 0.1rem solid red;
 }
 
 .dish__validate {
   height: 2rem;
   background-color: #99E2D0;
-  border-radius: 0 0.5rem 0.5rem 0;
+  border-radius: 0 0.6rem 0.6rem 0;
   min-width: 2.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.dish__validate:hover > .fa-check-circle {
+  -webkit-transform: rotate(1turn);
+          transform: rotate(1turn);
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 .dish__validate .fa-check-circle {
   font-size: 1.1rem;
@@ -628,14 +679,6 @@ h3 {
   border-radius: 25px;
   color: #FFF;
   background-color: #99E2D0;
-}
-.dish__validate .fa-check-circle:hover {
-  -webkit-transform: rotate(1turn);
-          transform: rotate(1turn);
-  -webkit-transition: -webkit-transform 1s linear;
-  transition: -webkit-transform 1s linear;
-  transition: transform 1s linear;
-  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 .starter, .maindish, .dessert {
@@ -649,13 +692,13 @@ h3 {
 }
 
 .maindish {
-  -webkit-animation: appear 2s ease 1s forwards;
-          animation: appear 2s ease 1s forwards;
+  -webkit-animation: appear 2s ease 0.5s forwards;
+          animation: appear 2s ease 0.5s forwards;
 }
 
 .dessert {
-  -webkit-animation: appear 2s ease 2s forwards;
-          animation: appear 2s ease 2s forwards;
+  -webkit-animation: appear 2s ease 1s forwards;
+          animation: appear 2s ease 1s forwards;
 }
 
 @media screen and (min-width: 540px) {

@@ -20,6 +20,14 @@ nav{
     vertical-align: middle;
     cursor: $cursor;
     transition: opacity .3s .5s;
+    .cityname{
+        border: none;
+        background-color: lighten($grey, 15%);
+        width: 7rem;
+        color: $black;
+        font-weight: bold;
+        padding-left: .5rem;
+    }
 }
 
 .choice{
@@ -27,17 +35,6 @@ nav{
     height: 13rem;
     background-color: lighten($grey, 20%);
     text-align: center;
-}
-
-.city:hover{
-    @include opacity;
-    box-shadow: .5rem .5rem .8rem $grey;
-}
-
-.cityname{
-    border: none;
-    background-color: lighten($grey, 15%);
-    width: 6rem;
 }
 
 .choicestore{
@@ -121,7 +118,7 @@ nav{
     position: relative;
     color: $black;
     background-color: lighten($grey, 20%); 
-    transition: background-color .3s .5s;
+    transition: background-color .3s .3s;
     @include heading-shadow;
     &:hover{
         background-color: lighten($primary, 35%);

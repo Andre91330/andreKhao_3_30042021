@@ -14,13 +14,13 @@
     border-top-color: $primary;
     border-bottom-color: $secondary;
     border-radius: 50%;
-    animation: spinner 2s linear forwards;
+    animation: spinner 3s linear forwards;
     opacity: 1;
 }
 
 @keyframes spinner{
     to{
-        transform: rotate(4turn);
+        transform: rotate(6turn);
         opacity: 0;
     }
 }
