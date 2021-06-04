@@ -15,7 +15,6 @@
     src:local('Shrikhand-Regular.ttf');
 }
 
-
 .resthead{
     height: 2rem;
 }
@@ -88,7 +87,7 @@ h3{
     height: 3rem;
     @include btn; 
     @include xsmall{
-        width: 16rem;
+        width: 29rem;
     }
 }
 
@@ -109,12 +108,20 @@ h3{
     min-width: 10.1rem;
     padding-top: .3rem; 
     padding-left: .4rem;
-    flex-grow: 1;    
+    flex-grow: 1; 
     & h3, p{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        animation: raise 3s linear forwards;
+        animation: raise 2s linear forwards;
+    }
+    &:hover + .dishpricevalidate{
+        width: 5.5rem;    
+        transition: width .3s linear .2s;
+        .fa-check-circle{          
+            transform: rotate(1turn);
+            transition: transform .3s linear .2s;
+        }
     }
 }
 
@@ -123,45 +130,34 @@ h3{
         transform: translate(0, .5rem);
     }
     100%{
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
 }
 
-.dishpricevalidate{   /* oeuf au plat */
+.dishpricevalidate{  
     width: 2.4rem;
     height: 3rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     overflow:hidden;
-    &:hover{
-        width: 5rem;
-        transition: width .5s linear;
-        & + .fa-check-circle{
-            transform: rotate(1turn);
-            transition: transform 1s linear;
-        }
-    }
 }
 
 .dish__price{
-    min-width: 2.4rem;
+    width: 2rem;
     height: 1.6rem;
     padding-top: 1.2rem; 
-
+    padding-right: 1rem;
+    margin-left: .3rem;
 }
  
 .dish__validate{
     height: 2rem;
     background-color: $tertiary;
     border-radius: 0 .6rem .6rem 0;
-    min-width: 2.5rem; 
+    width: 3rem; 
     justify-content: center;
     padding-top: 1rem;
     display: flex;
-    &:hover > .fa-check-circle{
-        transform: rotate(1turn);
-        transition: transform 1s linear;
-    }
     .fa-check-circle{
         font-size: 1.1rem;
         width: 1.1rem;

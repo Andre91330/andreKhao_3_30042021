@@ -12,8 +12,9 @@ $cursor: pointer;
 
 //responsive
 $breakpoints: (
-    mobile: 420px,
-    xsmall: 540px,
+    mobile: 425px,
+    xsmall: 535px,
+    ppro: 1020px,
 );
 
 //map meal
@@ -21,4 +22,7 @@ $mealappear: (
     starter: 1s,
     maindish: 3s,
     dessert: 6s,
-)
+);
+
+//mail
+$shake: 1%;

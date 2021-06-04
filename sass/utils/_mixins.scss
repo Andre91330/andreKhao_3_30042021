@@ -5,7 +5,7 @@
 }
 
 @mixin shadowhover{
-    box-shadow: 0 .2rem .9rem lighten($color: $black, $amount: 60%);
+    box-shadow: 0 .2rem .9rem lighten($black, 60%);
 }
 
 @mixin linear-gradient{
@@ -53,12 +53,17 @@
         }
         &__full{
             display: flex;
+            background-image: linear-gradient($primary, $secondary);
+            background-size: 100%;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            -moz-text-fill-color: transparent;
         }
     }
 }
 
 @mixin colourpage{ 
-    background-color: darken($white, 5%)
+    background-color: darken($white, 5%);
 }
 
 @mixin mobile-only {
@@ -69,6 +74,12 @@
 
 @mixin xsmall{
     @media screen and (min-width: map-get($breakpoints, xsmall)){
+        @content;
+    }
+}
+
+@mixin ppad{
+    @media screen and (min-width: map-get($breakpoints, ppad)){
         @content;
     }
 }

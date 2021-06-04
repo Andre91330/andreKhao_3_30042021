@@ -1,8 +1,7 @@
 @import "../utils/mixins";
 @import "../utils/variables";
 
-@mixin likefull { 
-    color: $primary;   
+@mixin likefull {   
     display: none;
 }
 
