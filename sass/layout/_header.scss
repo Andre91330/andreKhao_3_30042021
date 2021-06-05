@@ -5,6 +5,6 @@ header{
   position: relative;
   height: 2rem;
   padding-top: 1rem;
-  box-shadow: 0 .1rem .8rem darken($grey, 10%);
+  @include head-shadow;
 }  
 

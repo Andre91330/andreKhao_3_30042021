@@ -1,11 +1,27 @@
 @import "./variables";
 
-@mixin heading-shadow ($color:$grey){
-    box-shadow:.2rem .2rem 1rem lighten ($color, 30%);
+@mixin heading-shadow($color:$grey){
+    box-shadow: .2rem .2rem 1rem lighten($color: $color, $amount: 30%);
+}
+
+@mixin head-shadow($color:$grey){
+    box-shadow: 0 .1rem .8rem darken($color: $color, $amount: 10%);
 }
 
 @mixin shadowhover{
-    box-shadow: 0 .2rem .9rem lighten($black, 60%);
+    box-shadow: 0 .2rem .9rem lighten($black, $amount: 60%);
+}
+
+@mixin backgroundlxv($color:$grey){
+    background-color: lighten($color: $color, $amount: 15%);
+}
+
+@mixin backgroundlxx($color:$grey){
+    background-color: lighten($color: $color, $amount: 20%);
+}
+
+@mixin backgroundlxxxv($color:$primary){
+    background-color: lighten($color: $color, $amount: 35%);
 }
 
 @mixin linear-gradient{
@@ -66,20 +82,33 @@
     background-color: darken($white, 5%);
 }
 
-@mixin mobile-only {
+@mixin mobile{
     @media screen and (min-width: map-get($breakpoints, mobile)){
          @content;
     }
 }
 
-@mixin xsmall{
-    @media screen and (min-width: map-get($breakpoints, xsmall)){
+@mixin duo{
+    @media screen and (min-width: map-get($breakpoints, duo)){
         @content;
     }
 }
 
-@mixin ppad{
-    @media screen and (min-width: map-get($breakpoints, ppad)){
+@mixin pad{
+    @media screen and (min-width: map-get($breakpoints, pad)){
+        @content;
+    }
+}
+
+@mixin ppro{
+    @media screen and (min-width: map-get($breakpoints, ppro)){
+        @content;
+    }
+}
+
+
+@mixin xxl{
+    @media screen and (min-width:map-get($breakpoints, xxl)){
         @content;
     }
 }
