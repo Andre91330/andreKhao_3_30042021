@@ -44,6 +44,12 @@ li a{
     color: $white;
 }
 
+li{
+    @include pad{
+        margin-bottom: 0.2rem;
+    }
+}
+
 .containermail{
     background-color: $tertiary;
     width: 100vw;

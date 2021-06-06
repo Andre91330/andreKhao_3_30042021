@@ -98,6 +98,9 @@ h3{
     @include pad{
         width: 20rem;
     }
+    @include ppro{
+        width: 30vw;
+    }
 }
 
 .dish{

@@ -35,6 +35,12 @@ nav{
     height: 13rem;
     text-align: center;
     @include backgroundlxx;
+    @include pad{
+        height: 17vh;
+    }
+    @include ppro{
+        padding-top: $ppro;
+    }
 }
 
 .choicestore{
@@ -59,26 +65,42 @@ nav{
         justify-content: center;
         font-size: 1.2rem;
     }
+    @include ppro{
+        margin-bottom: $ppro;
+    }
 }
 
 #linker{
     margin-bottom: 1rem;
+    @include ppro{
+        height: 15vh;
+        padding-top: $ppro;
+    }
 }
 
 .resplink, .resprest{ 
     @include duo{
         display: block;
+        width: 100%;
+        height: auto;
         display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         flex-wrap: wrap;
-        width: 14.5rem;
     }
 }
 
 .link{
-    width: 100%;
+    width: 96%;
     display: flex;
     vertical-align: middle;
-    position: relative;
+    position: relative; 
+    @include duo{
+        width: 15.5rem;
+    }
+    @include ppro{
+        width: 30vw;
+    }
 }
 
 .linknumber{
@@ -102,7 +124,7 @@ nav{
 
 .linkbtn{
     vertical-align: middle;
-    width: 92%;
+    width: 96%;
     padding: .8rem 0;
     margin: .5rem 0 .5rem 1.2rem;
     align-items: center;
@@ -118,10 +140,12 @@ nav{
     @include heading-shadow;
     &:hover{
         @include backgroundlxxxv;
+        @include shadowhover;
         &:hover > i{
             color:$primary;
         }
-    }  
+    } 
+    
 }
 
 .linkbtn a{
@@ -131,13 +155,12 @@ nav{
     padding-left: 5%;
 }
 
-.linkbtn:hover {
-    @include shadowhover;
-}
-
 main{
     padding-bottom: 1rem;
-    @include backgroundlxx
+    @include backgroundlxx;
+    @include ppro{
+        padding-top: $ppro;
+    }
 }
 
 .restcard{
@@ -154,7 +177,10 @@ main{
         @include shadowhover;
     }
     @include duo{
-        width: 33rem;
+        width: 45vw;
+    }
+    @include ppro{
+        height: 15rem;
     }
 }
 
@@ -163,7 +189,9 @@ main{
     height: 9rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
-    
+    @include ppro{
+        height: 12rem;
+    }   
 }
 
 .restbrand{ 

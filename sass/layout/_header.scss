@@ -6,5 +6,8 @@ header{
   height: 2rem;
   padding-top: 1rem;
   @include head-shadow;
+  @include pad{
+    height: $ppro;
+  }
 }  
 
