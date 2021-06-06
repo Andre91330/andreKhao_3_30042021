@@ -52,8 +52,8 @@ li{
 
 .containermail{
     background-color: $tertiary;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .form{
@@ -61,12 +61,9 @@ li{
     justify-content: space-around;
     #email-input{
         font-weight: bold;
-        }
+    }
     &__group{
         padding-top: 3.5rem;
-        @include duo{
-            width: 30rem;
-        }
         & input{
             border: .125rem solid $white;
             border-radius: 100rem;
@@ -75,7 +72,7 @@ li{
             font-size: 1rem;
             outline: none;
             padding: .5rem 1.5rem;
-            width: 59%;
+            width: 75vw;
             &:active, &:focus{
                 border: .125rem solid black;
             }
@@ -85,6 +82,9 @@ li{
                 background-color: $secondary;
                 animation: nogood 100ms cubic-bezier(.4,.1,.6,.9);
                 animation-iteration-count: 2;
+            }
+            @include duo{
+                width: 25rem;
             }
         }
     }
