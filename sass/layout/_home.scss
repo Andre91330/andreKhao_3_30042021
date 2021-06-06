@@ -35,9 +35,6 @@ nav{
     height: 13rem;
     text-align: center;
     @include backgroundlxx;
-    @include pad{
-        height: 17vh;
-    }
     @include ppro{
         padding-top: $ppro;
     }
@@ -73,7 +70,7 @@ nav{
 #linker{
     margin-bottom: 1rem;
     @include ppro{
-        height: 15vh;
+        height: 15%;
         padding-top: $ppro;
     }
 }
@@ -99,7 +96,7 @@ nav{
         width: 15.5rem;
     }
     @include ppro{
-        width: 30vw;
+        width: 30%;
     }
 }
 
@@ -177,7 +174,7 @@ main{
         @include shadowhover;
     }
     @include duo{
-        width: 45vw;
+        width: 45%;
     }
     @include ppro{
         height: 15rem;
