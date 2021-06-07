@@ -18,14 +18,40 @@ p::first-letter {
   text-transform: uppercase;
 }
 
-.spinner {
+.spinner::before {
+  content: "";
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10001;
+  overflow: hidden;
+  background: #FFF;
+  -webkit-animation: spinnerb 3s linear forwards;
+          animation: spinnerb 3s linear forwards;
+  opacity: 0.8;
+}
+
+@-webkit-keyframes spinnerb {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+@keyframes spinnerb {
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+.spinner::after {
   width: 100vw;
   height: 100vh;
   z-index: 10002;
   content: "";
   position: fixed;
-  top: 46%;
-  left: 46%;
+  top: 50%;
+  left: 50%;
   width: 3rem;
   height: 3rem;
   border: 0.3rem solid #99E2D0;
