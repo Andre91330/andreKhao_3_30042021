@@ -92,6 +92,50 @@ header {
   }
 }
 
+.choicestore {
+  -webkit-transition: opacity 0.2s 0.1s;
+  transition: opacity 0.2s 0.1s;
+}
+.choicestore .btn {
+  text-decoration: none;
+  background-color: #FF79DA;
+  color: #FFF;
+  vertical-align: middle;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  border-radius: 1.5rem;
+  margin: auto;
+  cursor: pointer;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.choicestore .btn:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
+          box-shadow: 0 0.2rem 0.9rem #999999;
+}
+.choicestore:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 0.2rem 0.2rem 1rem white;
+          box-shadow: 0.2rem 0.2rem 1rem white;
+}
+
+.choicestore__store {
+  font-size: x-small;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .like {
   font-size: 1.3rem;
   position: absolute;
@@ -101,6 +145,10 @@ header {
 
 .like__full {
   display: none;
+}
+.like:hover {
+  -webkit-animation: heartcolor 2s;
+          animation: heartcolor 2s;
 }
 .like:hover .like__empty {
   display: none;
@@ -118,6 +166,29 @@ header {
   -moz-text-fill-color: transparent;
 }
 
+@-webkit-keyframes heartcolor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heartcolor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 footer {
   padding: 1.5rem;
   width: auto;
@@ -281,7 +352,7 @@ nav {
 
 .choice {
   width: auto;
-  height: 13rem;
+  height: 12.5rem;
   text-align: center;
   background-color: #f3f3f3;
 }
@@ -289,40 +360,6 @@ nav {
   .choice {
     padding-top: 2.3rem;
   }
-}
-
-.choicestore {
-  -webkit-transition: opacity 0.2s 0.1s;
-  transition: opacity 0.2s 0.1s;
-}
-.choicestore .btn {
-  text-decoration: none;
-  background-color: #FF79DA;
-  color: #FFF;
-  vertical-align: middle;
-  padding: 0.6rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  border-radius: 1.5rem;
-  margin: auto;
-  cursor: pointer;
-  font-weight: bold;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-}
-.choicestore .btn:hover {
-  opacity: 0.9;
-  -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
-          box-shadow: 0 0.2rem 0.9rem #999999;
-  color: #000;
-}
-
-.choicestore:hover {
-  opacity: 0.5;
-  -webkit-box-shadow: 0.2rem 0.2rem 1rem white;
-          box-shadow: 0.2rem 0.2rem 1rem white;
 }
 
 .choice p {
@@ -469,7 +506,7 @@ main {
 }
 
 .restcard {
-  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  margin: 1.5rem 0.5rem 1.5rem 0.5rem;
   width: 94.3%;
   height: 12rem;
   border-radius: 1rem;
@@ -555,45 +592,6 @@ main {
   background: #99E2D0;
 }
 
-.orderbtn {
-  text-decoration: none;
-  color: #FFF;
-  font-size: 0.8rem;
-  vertical-align: middle;
-  padding: 0.6rem 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: none;
-  border-radius: 1.5rem;
-  cursor: pointer;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  -webkit-transition: opacity 0.3s 0.3s;
-  transition: opacity 0.3s 0.3s;
-}
-.orderbtn:hover {
-  opacity: 0.9;
-  color: #000;
-}
-
-.order {
-  padding-top: 1.3rem;
-  padding-bottom: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-@font-face {
-  font-family: "roboto";
-  src: local("RobotoCondensed-Light.ttf");
-  font-family: "shrikhand";
-  src: local("Shrikhand-Regular.ttf");
-}
 .resthead {
   height: 2rem;
 }
@@ -843,4 +841,11 @@ h3 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("./fonts/roboto/RobotoCondensed-Light.ttf");
+  font-family: "shrikhand";
+  src: url("./fonts/shrikhand/Shrikhand-Regular.ttf");
 }/*# sourceMappingURL=style.css.map */

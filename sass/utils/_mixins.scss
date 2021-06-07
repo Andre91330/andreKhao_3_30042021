@@ -34,7 +34,7 @@
         background-color: $secondary;
         color: $white;
         vertical-align: middle;
-        padding: .6rem;
+        padding: .5rem 1rem .5rem 1rem;
         align-items: center;
         border: none;
         border-radius: 1.5rem;
@@ -45,7 +45,6 @@
         &:hover{
             @include opacity;
             @include shadowhover;
-            color: $black;
         }
     }
  }
@@ -54,12 +53,8 @@
     opacity: .9;
 }
 
-@mixin btn{
-    border: none;
-    border-radius: 0.7rem;
-    cursor: pointer;
-    background-color: #f3f3f3;
-    box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
+@mixin likefull {   
+    display: none;
 }
 
 @mixin likeheart{
@@ -76,6 +71,14 @@
             -moz-text-fill-color: transparent;
         }
     }
+}
+
+@mixin btn{
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    background-color: #f3f3f3;
+    box-shadow: 0.2rem 0.2rem 1rem #cdcdcd;
 }
 
 @mixin colourpage{ 
@@ -105,7 +108,6 @@
         @content;
     }
 }
-
 
 @mixin xxl{
     @media screen and (min-width:map-get($breakpoints, xxl)){

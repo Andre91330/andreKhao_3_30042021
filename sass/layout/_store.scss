@@ -1,28 +1,192 @@
 @import "../utils/mixins";
+@import "../utils/variables";
 
+.resthead{
+    height: 2rem;
+}
 
-.orderbtn{
-    text-decoration: none;
-    color: $white;
-    font-size: .8rem;
-    vertical-align: middle;
-    padding: .6rem 2rem;
-    align-items: center;
-    border: none;
-    border-radius: 1.5rem;
+.fa-arrow-left{
+    position: absolute;
+    left: 1rem;
+    margin-top: -1.3rem;
     cursor: $cursor;
-    @include linear-gradient;
-    transition: opacity .3s .3s;
-    &:hover{
-        @include opacity;
-        color: $black;
+    color: $black;
+}
+
+.name{
+    width: 100%;
+    height: 2rem;
+    padding-top: 1.3rem;
+    @include colourpage;
+    border-radius: 2rem 2rem 0 0;
+    position: absolute;
+    margin-top: -3.2rem;
+    h1{
+        font-family:'Shrikhand';
+        font-size: 1.2rem;
+        padding-left: 1rem;    
+    }
+    .like{
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
     }
 }
 
-.order{
-    padding-top: 1.3rem;
-    padding-bottom: 1.5rem;
-    display: flex;
-    justify-content: center;
+.name .like{
+    margin-top: -1.2rem;
+    margin-right: .8rem;
 }
-  
+
+.banner img{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    @include pad{
+        height: 19.5rem;
+    }
+    @include ppro{
+        height: 30rem;
+    }
+}
+
+main{
+    @include colourpage;
+}
+
+.platter{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: .8rem;
+    padding: 1rem 0 .4rem 1rem;
+    &::after{
+        content:"";
+        display: block;
+        width: 2.2rem;
+        height: .2rem;
+        background: $tertiary;
+        margin-top: .4rem;
+    }
+}
+
+h3{
+    font-size: .7rem;
+}
+
+.dishwaistline{
+    color: $black;
+    margin: .6rem;
+    width: 95%;
+    height: 3rem;
+    @include btn; 
+    @include duo{
+        width: 33.5rem;
+    }
+    @include pad{
+        width: 20rem;
+    }
+    @include ppro{
+        width: 30vw;
+    }
+}
+
+.dish{
+    display: flex;
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+ 
+.dish__name{
+    min-width: 10.1rem;
+    padding-top: .3rem; 
+    padding-left: .4rem;
+    flex-grow: 1; 
+    & h3, p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        animation: raise 2s linear forwards;
+    }
+    &:hover + .dishpricevalidate{
+        width: 5.5rem;    
+        transition: width .3s linear .2s;
+        .fa-check-circle{          
+            transform: rotate(1turn);
+            transition: transform .3s linear .2s;
+        }
+    }
+}
+
+@keyframes raise{
+    0%{
+        transform: translate(0, .5rem);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+.dishpricevalidate{  
+    width: 2.4rem;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    overflow:hidden;
+}
+
+.dish__price{
+    width: 2rem;
+    height: 1.6rem;
+    padding-top: 1.2rem; 
+    padding-right: 1rem;
+    margin-left: .3rem;
+}
+ 
+.dish__validate{
+    height: 2rem;
+    background-color: $tertiary;
+    border-radius: 0 .6rem .6rem 0;
+    width: 3rem; 
+    justify-content: center;
+    padding-top: 1rem;
+    display: flex;
+    .fa-check-circle{
+        font-size: 1.1rem;
+        width: 1.1rem;
+        height: 1.1rem;
+        border-radius: 25px;
+        color: $white;
+        background-color: $tertiary;
+    }
+}
+
+.starter, .maindish, .dessert{
+    font-size: .7rem;
+    opacity: 0;
+}
+
+.starter{    
+    animation: appear 2s ease forwards;
+}
+
+.maindish{  
+    animation: appear 2s ease .5s forwards;
+}
+
+.dessert{
+    animation: appear 2s ease 1s forwards;
+} 
+
+.meal{
+    @include duo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+}

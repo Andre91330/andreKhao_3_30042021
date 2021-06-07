@@ -32,24 +32,13 @@ nav{
 
 .choice{
     width: auto;
-    height: 13rem;
+    height: 12.5rem;
     text-align: center;
     @include backgroundlxx;
     @include ppro{
         padding-top: $ppro;
     }
 }
-
-.choicestore{
-    @include choix;
-    transition: opacity .2s .1s;
-}
-
-.choicestore:hover{
-    opacity: .5;
-    @include heading-shadow;
-}
-
 .choice p{
     padding: 1rem 0 1.5rem 0;
 }
@@ -161,7 +150,7 @@ main{
 }
 
 .restcard{
-    margin: .5rem .5rem 1rem .5rem;
+    margin: 1.5rem .5rem 1.5rem .5rem;
     width: 94.3%;
     height: 12rem;
     border-radius: 1rem; 
