@@ -4,10 +4,6 @@
 .choicestore{
     @include choix;
     transition: opacity .2s .1s;
-    &:hover{
-        opacity: .9;
-        @include heading-shadow;
-    }
 }
 
 .choicestore__store{

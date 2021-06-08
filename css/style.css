@@ -118,11 +118,6 @@ header {
   -webkit-box-shadow: 0 0.2rem 0.9rem #999999;
           box-shadow: 0 0.2rem 0.9rem #999999;
 }
-.choicestore:hover {
-  opacity: 0.9;
-  -webkit-box-shadow: 0.2rem 0.2rem 1rem white;
-          box-shadow: 0.2rem 0.2rem 1rem white;
-}
 
 .choicestore__store {
   font-size: x-small;
