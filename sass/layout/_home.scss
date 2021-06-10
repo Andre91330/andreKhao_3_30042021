@@ -41,6 +41,7 @@ nav{
 }
 .choice p{
     padding: 1rem 0 1.5rem 0;
+    @include opacityv;
 }
 
 .headline{
@@ -106,6 +107,7 @@ nav{
     width: 7%;
     align-items: center;
     padding-left: 7%;
+    @include opacityv;
 }
 
 .linkbtn{
@@ -129,6 +131,7 @@ nav{
         @include shadowhover;
         &:hover > i{
             color:$primary;
+            opacity: 1;
         }
     } 
     

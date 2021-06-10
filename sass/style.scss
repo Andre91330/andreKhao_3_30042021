@@ -1,0 +1,15 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/confs";
+@import "./layout/spinner";
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/home";
+@import "./layout/store";
+@font-face{
+    font-family: 'roboto';
+    src:url('/fonts/roboto/RobotoCondensed-Light.ttf');
+    font-family: 'shrikhand';
+    src:url('/fonts/shrikhand/Shrikhand-Regular.ttf');
+}
