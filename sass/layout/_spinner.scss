@@ -8,18 +8,12 @@
     z-index: 10001;
     overflow: hidden;
     background: $white;
-    animation: spinnerb 3s forwards;
+    animation: spinnerb 3s linear forwards;
     opacity: .9;
 }
 
 @keyframes spinnerb{
-    0%{
-        opacity: .9;
-    }
-    98%{
-        opacity: .9;
-    }
-    99%{
+    to{
         opacity: 0;
         z-index: -1;
     }
